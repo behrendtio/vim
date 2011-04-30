@@ -1,5 +1,5 @@
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+[submodule "bundle/markdown"]
+	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown/
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
@@ -10,3 +10,21 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
+[submodule "bundle/mru"]
+	path = bundle/mru
+	url = https://github.com/vim-scripts/mru.vim
+[submodule "bundle/pastie"]
+	path = bundle/pastie
+	url = https://github.com/tpope/vim-pastie
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit
+[submodule "bundle/latexsuite"]
+	path = bundle/latexsuite
+	url = https://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX
+[submodule "bundle/fuzzyfinder"]
+	path = bundle/fuzzyfinder
+	url = https://github.com/vim-scripts/FuzzyFinder
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = https://github.com/vim-scripts/L9
