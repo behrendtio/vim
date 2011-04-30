@@ -1,0 +1,29 @@
+Dokumentation
+=============
+
+Plugins
+-------
+
+* SnipMate
+* FuzzyFinder
+* L9 (required by FuzzyFinder)
+* Gundo
+* Latex-Suite
+* NERDtree
+* Taglist
+* XMLEdit
+* Fugitive
+* MRU
+* Pastie
+* PHP-Doc
+
+Additional filetypes
+--------------------
+
+* Markdown
+
+
+Not installed, but interesting plugins
+--------------------------------------
+
+* Autoclose
