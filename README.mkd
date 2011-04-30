@@ -1,0 +1,21 @@
+Vim Configuration
+=================
+
+*ATTENTION: Use at your own risk! Tested with Vim 7.2 and newer.*
+
+
+Installation
+------------
+
+1. Cd to your home directory, create a backup of your .vim folder and your .vimrc file, checkout the repository.
+
+        cd ~
+        mv .vim .vim_backup
+        mv .vimrc .vimrc_backup
+        git clone git://github.com/tipclapper/vim.git .vim
+
+2. Create a symlink to the vimrc file in the .vim folder.
+
+        ln -fs ~/.vim/vimrc ~/.vimrc
+
+3. Restart (G)Vim.
