@@ -16,6 +16,8 @@ Plugins
 * MRU
 * Pastie
 * PHP documentor
+* Better PHP completion
+
 
 Additional filetypes
 --------------------
@@ -23,8 +25,12 @@ Additional filetypes
 * Markdown
 
 
-Not installed, but interesting plugins
---------------------------------------
+Not installed, but interesting
+------------------------------
 
 * Autoclose
 * Conque-Term
+* PIV https://github.com/spf13/PIV
+* AutocloseTag
+* SuperTab
+* Matchit
