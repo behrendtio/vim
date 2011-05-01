@@ -27,4 +27,4 @@
 	url = https://github.com/vim-scripts/L9
 [submodule "bundle/markdown"]
 	path = bundle/markdown
-	url = https://github.com/plasticboy/vim-markdown/
+	url = https://github.com/plasticboy/vim-markdown.git
