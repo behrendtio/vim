@@ -34,3 +34,6 @@
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/tipclapper/snipmate.vim
