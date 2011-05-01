@@ -27,3 +27,4 @@ Not installed, but interesting plugins
 --------------------------------------
 
 * Autoclose
+* Conque-Term

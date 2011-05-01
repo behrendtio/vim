@@ -8,6 +8,11 @@ set encoding=utf-8
 " No vi backward compatibility to vi
 set nocompatible
 
+" Set window position, width and height for startup
+winpos 0 0
+set lines=80
+au GUIEnter * set columns=300
+
 " Automatically read files when they were changed on the filesystem
 set autoread
 
