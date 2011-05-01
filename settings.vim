@@ -27,7 +27,7 @@ let mapleader = ","
 
 " Vim information to keep
 " 100 Marks, 1000 Registers, 100 Commands, 100 Searches, Buffer list
-:set viminfo='100,f1,\"1000,:100,/100,%
+set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers 
 set number
@@ -130,7 +130,7 @@ filetype indent on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Save the file if focus is lost (very handy)
-" ATTENTION: Does not work in terminal vim ;-)
+" Attention: Does not work in terminal vim ;-)
 au FocusLost * :wa
 
 " Enable syntax highlighting of SQL and HTML within PHP files and set PHP folding and error handling
@@ -198,3 +198,18 @@ let g:Tlist_Show_One_File=1
 
 " Set taglist width
 let g:Tlist_WinWidth=50
+
+" Set PHP documentor settings
+let g:pdv_cfg_Version = "$Id$"
+let g:pdv_cfg_Author = "Mario Behrendt <mario.behrendt@netresearch.de>"
+let g:pdv_cfg_Copyright = "2011"
+let g:pdv_cfg_License = "GPL"
+
+let g:pdv_cfg_ReturnVal = "void"
+
+" Wether for PHP5 code PHP4 tags should be set, like @access,... (1|0)?
+let g:pdv_cfg_php4always = 0
+ 
+" Wether to guess scopes after PEAR coding standards:
+" $_foo/_bar() == <private|protected> (1|0)?
+let g:pdv_cfg_php4guess = 0
