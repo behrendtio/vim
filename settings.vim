@@ -58,7 +58,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%f\ %m\ %r\ \ %y\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n
+set stl=%t\ %m\ %r\ \ %y\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n
 
 " Set scroll off to 8 lines
 set scrolloff=8
