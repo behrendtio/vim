@@ -163,7 +163,7 @@ if v:version >= 703
     set colorcolumn=+1
 
     " Set color column color
-    " hi ColorColumn ctermbg=233 guibg=grey
+    hi ColorColumn ctermbg=233 guibg=#2F2F2F
 endif
 
 " Detect .phtml files as PHP
