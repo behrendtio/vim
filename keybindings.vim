@@ -65,6 +65,9 @@ nmap <Leader>op <Esc>:w<CR>:call OpenPHPUnitTest()<CR>
 " Open scratch markdown buffer with ,xx
 nmap <Leader>xx <Esc>:call OpenScratchMarkdown()<CR>
 
+" Format whole file with ,f
+nmap <Leader>f <Esc>:call FormatFile()<CR>
+
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
 vnoremap <tab> %

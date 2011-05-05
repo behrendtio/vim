@@ -11,9 +11,8 @@ function! s:ExecuteInShell(command)
     silent! execute 'au BufUnload <buffer> execute bufwinnr(' . bufnr('#') . ') . ''wincmd w'''
     silent! execute 'nnoremap <silent> <buffer> <LocalLeader>r :call <SID>ExecuteInShell(''' . command . ''')<CR>'
     echo 'Shell command ' . command . ' executed.'
-    endfunction
-
-    command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
+endfunction
+command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 " Opens the regarding Unit Test to a PHP file (needs ZF like folder stucture)
 function! OpenPHPUnitTest()
@@ -26,4 +25,12 @@ endfunction
 function! OpenScratchMarkdown()
     let cmd = 'vs ~/Desktop/Scratch.mkd'
     execute cmd
+endfunction
+
+" Format whole file according to the filetype and vims syntax settings
+function! FormatFile()
+    execute "normal! mf"
+    execute "normal! gg"    
+    execute "normal! =G"    
+    execute "normal! 'f"
 endfunction
