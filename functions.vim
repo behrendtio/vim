@@ -41,6 +41,6 @@ function! CompileRst()
     let outfile = substitute(expand('%s'), '.rst', '.pdf', '')
     execute cmd
 
-    let open = '!evince ' . outfile
+    let open = '!evince ' . outfile . ' &'
     execute open
 endfunction
