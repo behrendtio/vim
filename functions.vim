@@ -22,8 +22,8 @@ function! OpenPHPUnitTest()
 endfunction
 
 " Opens scratch markdown file
-function! OpenScratchMarkdown()
-    let cmd = 'vs ~/Desktop/Scratch.mkd'
+function! OpenScratchRst()
+    let cmd = 'vs ~/Desktop/Scratch.rst'
     execute cmd
 endfunction
 
@@ -33,4 +33,14 @@ function! FormatFile()
     execute "normal! gg"    
     execute "normal! =G"    
     execute "normal! 'f"
+endfunction
+
+" Compile rst document and open pdf file
+function! CompileRst()
+    let cmd = '!rst2pdf ' . expand('%s')
+    let outfile = substitute(expand('%s'), '.rst', '.pdf', '')
+    execute cmd
+
+    let open = '!evince ' . outfile
+    execute open
 endfunction

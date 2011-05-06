@@ -63,10 +63,13 @@ nmap <Leader>P <Esc>:w<CR>:!clear; cd tests/; phpunit; cd ..<CR>
 nmap <Leader>op <Esc>:w<CR>:call OpenPHPUnitTest()<CR>
 
 " Open scratch markdown buffer with ,xx
-nmap <Leader>xx <Esc>:call OpenScratchMarkdown()<CR>
+nmap <Leader>xx <Esc>:call OpenScratchRst()<CR>
 
 " Format whole file with ,f
 nmap <Leader>f <Esc>:call FormatFile()<CR>
+
+" Compile rst file and open according pdf
+nmap <Leader>qq <Esc>:w<CR>:call CompileRst()<CR>
 
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
