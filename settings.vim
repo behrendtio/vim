@@ -105,8 +105,10 @@ set hidden
 " Show current command in the lower right corner
 set showcmd
 
-" GVim font is Monaco, 10 pixels
-set guifont=Monaco\ 10
+" GVim font and size
+" Hint: Use 'set guifont=*' to bring up systems font chooser
+"set guifont=Monaco\ 10
+set guifont=Monospace\ 9
 
 " Disable GVim's menu bar
 set guioptions-=m
