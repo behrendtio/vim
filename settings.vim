@@ -92,8 +92,8 @@ set ts=4 sts=4 sw=4 expandtab
 " Make the backspace key act like it does in any editor (remove characters, indentation and end of lines)
 set backspace=indent,eol,start
 
-" Textwidth to 80 characters (based on this setting, the color column will appear)
-set textwidth=80
+" Textwidth to 120 characters (based on this setting, the color column will appear)
+set textwidth=120
 
 " Always substitute global
 set gdefault
@@ -161,8 +161,8 @@ set listchars=tab:▸\ ,eol:¬
 
 " Set color column if using Vim 7.3+
 if v:version >= 703
-    " Set color column to textwidth + 1 and +41 (Columns 81 and 121)
-    set colorcolumn=+1,+41
+    " Set color column to textwidth -39 and +1 (Columns 81 and 121)
+    set colorcolumn=-39,+1
 
     " Set color column color
     hi ColorColumn ctermbg=233 guibg=#2F2F2F
