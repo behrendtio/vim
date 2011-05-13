@@ -39,8 +39,16 @@ endfunction
 function! CompileRst()
     let cmd = '!rst2pdf ' . expand('%s')
     let outfile = substitute(expand('%s'), '.rst', '.pdf', '')
-    execute cmd
+    silent! execute cmd
 
     let open = '!evince ' . outfile . ' &'
-    execute open
+    silent! execute open
+endfunction
+
+" Run XML linter for syntax checking
+function! RunXmlLint()
+    silent execute ":w"
+
+    let cmd = '!xmllint --noout %'
+    execute cmd
 endfunction

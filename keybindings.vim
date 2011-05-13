@@ -71,6 +71,9 @@ nmap <Leader>f <Esc>:call FormatFile()<CR>
 " Compile rst file and open according pdf
 nmap <Leader>qq <Esc>:w<CR>:call CompileRst()<CR>
 
+" Run XML file through linter with ,xl
+nmap <Leader>xl :call RunXmlLint()<CR>
+
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
 vnoremap <tab> %
