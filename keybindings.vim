@@ -80,8 +80,9 @@ vnoremap <tab> %
 
 " Disable arrow keys for navigation
 " Use left and right arrow key for previous and next buffer
-nnoremap <up> <nop>
-nnoremap <down> <nop>
+" USe up and down to bubbling lines
+nmap <up> [e
+nmap <down> ]e
 nnoremap <left> <Esc>:bp<CR>
 nnoremap <right> <Esc>:bn<CR>
 inoremap <up> <nop>

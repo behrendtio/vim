@@ -17,6 +17,7 @@ Plugins
 * Pastie
 * PHP documentor
 * Better PHP completion
+* Unimpaired
 
 
 Additional filetypes
