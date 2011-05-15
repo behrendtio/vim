@@ -195,6 +195,15 @@ let g:Tex_MultipleCompileFormats = "dvi,pdf"
 " Close NERDtree when files was opened
 let NERDTreeQuitOnOpen=1
 
+" Show NERDTree bookmarks
+let NERDTreeShowBookmarks=1
+
+" Display arrows instead of ascii art in NERDTree
+let NERDTreeDirArrows=1
+
+" Start NERDTree in minimal UI mode (No help lines)
+let NERDTreeMinimalUI=1
+
 " Show taglist on the right side
 let g:Tlist_Use_Right_Window=1 
 
