@@ -74,6 +74,9 @@ nmap <Leader>qq <Esc>:w<CR>:call CompileRst()<CR>
 " Run XML file through linter with ,xl
 nmap <Leader>xl :call RunXmlLint()<CR>
 
+" Open ToDo file from dropbox
+nmap <Leader>t :tabnew ~/Dropbox/Todo.rst<CR>
+
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
 vnoremap <tab> %
