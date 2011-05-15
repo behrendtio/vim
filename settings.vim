@@ -80,7 +80,7 @@ set incsearch
 set foldmethod=indent
 
 " Open all folds when opening a new file
-"set nofoldenable
+set nofoldenable
 
 " Bo backup and swap files
 set nobackup
@@ -212,18 +212,3 @@ let g:Tlist_Show_One_File=1
 
 " Set taglist width
 let g:Tlist_WinWidth=50
-
-" Set PHP documentor settings
-let g:pdv_cfg_Version = "$Id$"
-let g:pdv_cfg_Author = "Mario Behrendt <mario.behrendt@netresearch.de>"
-let g:pdv_cfg_Copyright = "2011"
-let g:pdv_cfg_License = "GPL"
-
-let g:pdv_cfg_ReturnVal = "void"
-
-" Wether for PHP5 code PHP4 tags should be set, like @access,... (1|0)?
-let g:pdv_cfg_php4always = 0
- 
-" Wether to guess scopes after PEAR coding standards:
-" $_foo/_bar() == <private|protected> (1|0)?
-let g:pdv_cfg_php4guess = 0
