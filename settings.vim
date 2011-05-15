@@ -80,7 +80,7 @@ set incsearch
 set foldmethod=indent
 
 " Open all folds when opening a new file
-set nofoldenable
+"set nofoldenable
 
 " Bo backup and swap files
 set nobackup
