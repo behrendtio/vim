@@ -40,9 +40,9 @@
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/vim-scripts/php.vim--Garvin.git
-[submodule "bundle/unimpaired"]
-	path = bundle/unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
 	url = https://github.com/tipclapper/PDV--phpDocumentor-for-Vim
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
