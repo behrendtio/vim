@@ -8,7 +8,7 @@ set encoding=utf-8
 " No vi backward compatibility to vi
 set nocompatible
 
-" Set window position, width and height for startup
+" Set window position, width and height for start up
 winpos 0 0
 set lines=80
 au GUIEnter * set columns=300
@@ -100,27 +100,10 @@ set gdefault
 
 " 'Hidden' buffers -- i.e., don't require saving before editing another file.
 " Calling quit will prompt you to save unsaved buffers anyways.
-set hidden
+"set hidden
 
 " Show current command in the lower right corner
 set showcmd
-
-" GVim font and size
-" Hint: Use 'set guifont=*' to bring up systems font chooser
-"set guifont=Monaco\ 10
-set guifont=Monospace\ 9
-
-" Disable GVim's menu bar
-set guioptions-=m
-
-" Disable GVim's tool bar
-set guioptions-=T
-
-" Disable left scroll bar in GVim
-set guioptions-=l
-
-" Disable right scroll bar in GVim
-set guioptions-=r
 
 " Automatically load plugins based on file extension
 filetype plugin on
@@ -142,12 +125,32 @@ let php_folding=1
 let php_parent_error_close=1
 let php_parent_error_open=1
 
-" OPen netrw with tree style
+" Open netrw with tree style
 let g:netrw_liststyle=3
 
-" Set color scheme if using GVim
+" If GVIM was opened
 if has("gui_running")
+    " Set color scheme if using GVim
     colors darkspectrum
+
+    " Font and fontsize
+    " Hint: Use 'set guifont=*' to bring up systems font chooser
+    "set guifont=Monaco\ 10
+    set guifont=Monospace\ 9
+
+    " Disable menu bar
+    set guioptions-=m
+
+    " Disable tool bar
+    set guioptions-=T
+
+    " Disable left scroll bar (normal and vsplit one)
+    set guioptions-=l
+    set guioptions-=L
+
+    " Disable right scroll bar (normal and vsplit one)
+    set guioptions-=r
+    set guioptions-=R
 endif
 
 " Highlight current line
@@ -178,7 +181,7 @@ autocmd BufNewFile,BufRead *.phtml set ft=php
 " -----------------------------------------------------------------------------
 
 " Open VCSCommand's splut function vertical
-let VCSCommandSplit = 'vertical'
+"let VCSCommandSplit = 'vertical'
 
 " Set latex output format to PDF
 let g:Tex_DefaultTargetFormat = "pdf"
