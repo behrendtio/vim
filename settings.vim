@@ -135,8 +135,8 @@ if has("gui_running")
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
-    "set guifont=Monaco\ 10
-    set guifont=Monospace\ 9
+    "set guifont=Monaco\ 9
+    set guifont=Monospace\ 8
 
     " Disable menu bar
     set guioptions-=m
@@ -168,7 +168,7 @@ if v:version >= 703
     set colorcolumn=-39,+1
 
     " Set color column color
-    hi ColorColumn ctermbg=233 guibg=#2F2F2F
+    hi ColorColumn ctermbg=233 guibg=#3C3C3C
 endif
 
 " Detect .phtml files as PHP
