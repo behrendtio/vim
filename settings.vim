@@ -100,7 +100,7 @@ set gdefault
 
 " 'Hidden' buffers -- i.e., don't require saving before editing another file.
 " Calling quit will prompt you to save unsaved buffers anyways.
-"set hidden
+set hidden
 
 " Show current command in the lower right corner
 set showcmd
