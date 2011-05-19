@@ -48,4 +48,4 @@
 	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/dbgp"]
 	path = bundle/dbgp
-	url = git@github.com:tipclapper/DBGp-Remote-Debugger-Interface.git
+	url = https://github.com/DBGp-Remote-Debugger-Interface.git
