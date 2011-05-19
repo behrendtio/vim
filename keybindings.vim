@@ -42,7 +42,7 @@ noremap <leader>d <Esc>:call PhpDoc()<CR>
 nmap <Leader>s <Esc>:tag<space>
 
 " Run exuberant-ctags with ,c (in the current folder)
-nmap <Leader>c <Esc>:!ctags -R --languages=php .<CR>
+nmap <Leader>c <Esc>:!ctags -R --languages=php --totals=yes .<CR>
 
 " Jump to tag with ,j
 nmap <Leader>j <Esc><C-]>
