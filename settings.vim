@@ -135,8 +135,8 @@ if has("gui_running")
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
-    "set guifont=Monaco\ 10
-    set guifont=Monospace\ 9
+    "set guifont=Monaco\ 9
+    set guifont=Monospace\ 8
 
     " Disable menu bar
     set guioptions-=m
