@@ -10,8 +10,8 @@ set nocompatible
 
 " Set window position, width and height for start up
 winpos 0 0
-set lines=80
-au GUIEnter * set columns=300
+set lines=95
+au GUIEnter * set columns=350
 
 " Automatically read files when they were changed on the filesystem
 set autoread
