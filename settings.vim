@@ -51,6 +51,9 @@ set showbreak=...
 " Open files on the right side of the current file when using :vs
 set splitright
 
+" Improve omni complete menu behaviour
+set completeopt=longest,menuone
+
 " Show a dollar sign in change mode to mark the end
 set cpoptions+=$
 
