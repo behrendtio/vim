@@ -19,6 +19,8 @@ Plugins
 * Better PHP completion
 * Unimpaired
 
+Ergebnis: 300
+
 
 Additional filetypes
 --------------------
@@ -29,6 +31,7 @@ Additional filetypes
 Not installed, but interesting
 ------------------------------
 
+* **0scan**
 * Autoclose
 * Conque-Term
 * PIV https://github.com/spf13/PIV

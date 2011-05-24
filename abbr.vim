@@ -16,3 +16,4 @@ iab funtcion function
 iab zedn zend
 iab jeknins jenkins
 iab githuv github
+iab tempalte template
