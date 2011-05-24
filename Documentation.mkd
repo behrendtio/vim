@@ -19,8 +19,6 @@ Plugins
 * Better PHP completion
 * Unimpaired
 
-Ergebnis: 300
-
 
 Additional filetypes
 --------------------
