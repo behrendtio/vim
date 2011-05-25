@@ -14,6 +14,12 @@ function! s:ExecuteInShell(command)
 endfunction
 command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
+" Builds tags file
+function! BuildTags()
+    let cmd = '!ctags -R --languages=php --totals=yes --tag-relative=yes --PHP-kinds=+cf-v .'
+    execute cmd
+endfunction
+
 " Opens the regarding Unit Test to a PHP file (needs ZF like folder stucture)
 function! OpenPHPUnitTest()
     let file = 'tests/' . substitute(expand('%s'), '.php', '', '') . 'Test.php'
