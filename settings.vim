@@ -207,6 +207,9 @@ let NERDTreeDirArrows=1
 " Start NERDTree in minimal UI mode (No help lines)
 let NERDTreeMinimalUI=1
 
+" Show only class name, constants and class methods on taglist
+let tlist_php_settings='php;c:Class;d:Constants;f:Methods'
+
 " Show taglist on the right side
 let g:Tlist_Use_Right_Window=1 
 
