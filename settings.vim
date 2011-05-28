@@ -41,9 +41,9 @@ set spelllang=de,en
 " Enable cursor to jump into 'invalid' space
 "set virtualedit=all
 
-" Active line wrap and soft wrap
-set wrap
-set linebreak
+" Activate line wrap and soft wrap
+"set wrap
+"set linebreak
 
 " Mark line breaks with three dots
 set showbreak=...
@@ -194,6 +194,9 @@ let g:tex_flavor='latex'
 
 " Automatically compile to dvi and pdf when comiling a tex file
 let g:Tex_MultipleCompileFormats = "dvi,pdf"
+
+" Initial NERDTree width
+let NERDTreeWinSize=50
 
 " Close NERDtree when files was opened
 let NERDTreeQuitOnOpen=1
