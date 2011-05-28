@@ -13,19 +13,19 @@ Some of the installed plugins require ruby to be installed and available in your
 Installation
 ------------
 
-1. Cd to your home directory, create a backup of your .vim folder and your .vimrc file, checkout the repository.
+1. Cd to your home directory, create a backup of your .vim folder and your .vimrc file, checkout the repository. ::
 
         cd ~
         mv .vim .vim_backup
         mv .vimrc .vimrc_backup
         git clone git://github.com/tipclapper/Vim.git .vim
 
-2. Initialize git submodules.
+2. Initialize git submodules. ::
 
         cd ~/.vim
         git submodule update --init
 
-3. Create a symlink to the vimrc file in the .vim folder.
+3. Create a symlink to the vimrc file in the .vim folder. ::
 
         ln -fs ~/.vim/vimrc ~/.vimrc
 
