@@ -80,7 +80,7 @@ nmap <Leader>xl :call RunXmlLint()<CR>
 " Open ToDo file from dropbox
 nmap <Leader>t :tabnew ~/Dropbox/Todo.rst<CR>
 
-nmap <Leader>dos :e ++ff=dos
+nmap <Leader>dos :e ++ff=dos<CR>
 
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
