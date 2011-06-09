@@ -33,7 +33,7 @@
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://github.com/tipclapper/snipmate.vim
+	url = https://github.com/MarioBehrendt/snipmate.vim
 [submodule "bundle/phpcomplete"]
 	path = bundle/phpcomplete
 	url = https://github.com/shawncplus/phpcomplete.vim.git
@@ -42,10 +42,10 @@
 	url = https://github.com/vim-scripts/php.vim--Garvin.git
 [submodule "bundle/pdv"]
 	path = bundle/pdv
-	url = https://github.com/tipclapper/PDV--phpDocumentor-for-Vim
+	url = https://github.com/MarioBehrendt/PDV--phpDocumentor-for-Vim
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/dbgp"]
 	path = bundle/dbgp
-	url = https://github.com/tipclapper/DBGp-Remote-Debugger-Interface.git
+	url = https://github.com/MarioBehrendt/DBGp-Remote-Debugger-Interface.git
