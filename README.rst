@@ -18,7 +18,7 @@ Installation
         cd ~
         mv .vim .vim_backup
         mv .vimrc .vimrc_backup
-        git clone git://github.com/tipclapper/Vim.git .vim
+        git clone git://github.com/MarioBehrendt/Vim.git .vim
 
 2. Initialize git submodules. ::
 
