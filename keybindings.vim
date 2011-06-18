@@ -80,7 +80,13 @@ nmap <Leader>xl :call RunXmlLint()<CR>
 " Open ToDo file from dropbox
 nmap <Leader>t :tabnew ~/Dropbox/Todo.rst<CR>
 
+" Re-open file with windows line endings
 nmap <Leader>dos :e ++ff=dos<CR>
+
+" Insert Rst Headline marks under the current line
+map h1 yypVr=o
+map h2 yypVr-o
+map h3 yypVr~o
 
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
