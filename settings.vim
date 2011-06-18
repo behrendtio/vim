@@ -1,6 +1,6 @@
 " Don't let Vim create new lines at the end of file
 " Attention: This should be on the very top, because it overrides settings like 'textwidth'
-set binary
+"set binary
 
 " Set UTF-8 as default encoding
 set encoding=utf-8
