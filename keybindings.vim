@@ -84,9 +84,9 @@ nmap <Leader>t :tabnew ~/Dropbox/Todo.rst<CR>
 nmap <Leader>dos :e ++ff=dos<CR>
 
 " Insert Rst Headline marks under the current line
-map h1 yypVr=o
-map h2 yypVr-o
-map h3 yypVr~o
+map <Leader>h1 yypVr=o
+map <Leader>h2 yypVr-o
+map <Leader>h3 yypVr~o
 
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
