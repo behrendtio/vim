@@ -17,7 +17,7 @@ Short version
 ~~~~~~~~~~~~~
 
 ::
-    git clone --recursive git://github.com/MarioBehrendt/Vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
+        git clone --recursive git://github.com/MarioBehrendt/Vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
 
 Long version
 ~~~~~~~~~~~~
