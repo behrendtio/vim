@@ -1,6 +1,8 @@
 " Common
 iab mbmail info@mario-behrendt.de
 iab nrmail mario.behrendt@netresearch.de
+iab netresaerch netresearch
+iab netreseaerch netresearch
 
 " German
 iab solte sollte
@@ -17,3 +19,4 @@ iab zedn zend
 iab jeknins jenkins
 iab githuv github
 iab tempalte template
+iab reutrn return

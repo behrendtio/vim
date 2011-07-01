@@ -1,4 +1,4 @@
-Dokumentation
+Documentation
 =============
 
 Upgrading plugins

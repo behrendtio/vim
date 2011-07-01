@@ -13,6 +13,15 @@ Some of the installed plugins require ruby to be installed and available in your
 Installation
 ------------
 
+Short version
+~~~~~~~~~~~~~
+
+::
+    git clone --recursive git://github.com/MarioBehrendt/Vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
+
+Long version
+~~~~~~~~~~~~
+
 1. Cd to your home directory, create a backup of your .vim folder and your .vimrc file, checkout the repository. ::
 
         cd ~
