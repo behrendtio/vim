@@ -16,7 +16,8 @@ Installation
 Short version
 ~~~~~~~~~~~~~
 
-::
+Use the following code to grep the repo and symlink it. ::
+
         git clone --recursive git://github.com/MarioBehrendt/Vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
 
 Long version
