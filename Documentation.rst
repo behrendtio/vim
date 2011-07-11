@@ -82,8 +82,8 @@ Available self defined shortcuts and mappings
       - Re-format whole file based on filetype - works greate for xml, php, ruby an so on (yaml is a pain in the ass...)
 
     * - ,qq
-      - Compile current file with rst2pdf and open corresponding PDF file with evince (linux document viewer, should be
-        tweaked if other viewers or operating system are used)
+      - Compile current file with rst2pdf and open corresponding PDF file with default pdf viewer (currently works for
+        linux systems running gnome and apple computers)
 
     * - ,xl
       - Run current file through XML linter (syntax check)

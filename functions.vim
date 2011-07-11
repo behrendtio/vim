@@ -47,7 +47,12 @@ function! CompileRst()
     let outfile = substitute(expand('%s'), '.rst', '.pdf', '')
     silent! execute cmd
 
-    let open = '!evince ' . outfile . ' &'
+    if has('mac') || has('macunix')
+        let open = '!open ' . outfile . '
+    else
+        let open = '!gnome-open ' . outfile . ' &'
+    endif
+
     silent! execute open
 endfunction
 
@@ -57,4 +62,42 @@ function! RunXmlLint()
 
     let cmd = '!xmllint --noout %'
     execute cmd
+endfunction
+
+" Check for vim config update
+function! CheckForUpgrade()
+    let g:VimConfigUpdateCheck = 1
+
+    if !g:VimConfigUpdateCheck
+        return
+    endif
+
+    let output = "Vim configuration update checker\n--------------------------------\n\n"
+
+    execute 'lcd '.$HOME.'/.vim'
+
+    let remote = system("git ls-remote origin -h refs/heads/master | awk '{print $1}'")
+    let local  = system("git rev-parse HEAD")
+
+    if remote != local
+        let output .= '**Nothing to update**'
+    else
+        let output .= '**You need an update!**'
+        let output .= "\n\n\nGit output\n----------\n\n"
+        let output .= system("git pull origin master")
+        let output .= "\n==========================================\n"
+        let output .= "You're up to date now (Please restart Vim)"
+        let output .= "\n==========================================" 
+    endif
+
+    execute 'lcd '.$HOME.'/.vim'
+
+    execute ':new'
+    execute ':res 20'
+
+    silent put=output
+
+    set filetype=rst
+    set nomodified
+    redraw
 endfunction

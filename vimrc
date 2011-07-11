@@ -9,3 +9,5 @@ source ~/.vim/abbr.vim
 source ~/.vim/keybindings.vim
 source ~/.vim/functions.vim
 source ~/.vim/playground.vim
+
+call CheckForUpgrade()
