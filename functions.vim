@@ -79,7 +79,7 @@ function! CheckForUpgrade()
     let remote = system("git ls-remote origin -h refs/heads/master | awk '{print $1}'")
     let local  = system("git rev-parse HEAD")
 
-    if remote != local
+    if remote == local
         let output .= '**Nothing to update**'
     else
         let output .= '**You need an update!**'
