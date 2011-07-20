@@ -48,7 +48,7 @@ function! CompileRst()
     silent! execute cmd
 
     if has('mac') || has('macunix')
-        let open = '!open ' . outfile . '
+        let open = '!open ' . outfile
     else
         let open = '!gnome-open ' . outfile . ' &'
     endif
