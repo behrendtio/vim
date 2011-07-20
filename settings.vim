@@ -168,10 +168,10 @@ set listchars=tab:▸\ ,eol:¬
 " Set color column if using Vim 7.3+
 if v:version >= 703
     " Set color column to textwidth -39 and +1 (Columns 81 and 121)
-    set colorcolumn=-39,+1
+    "set colorcolumn=-39,+1
 
     " Set color column color
-    hi ColorColumn ctermbg=233 guibg=#3C3C3C
+    "hi ColorColumn ctermbg=233 guibg=#3C3C3C
 endif
 
 " Detect .phtml files as PHP
