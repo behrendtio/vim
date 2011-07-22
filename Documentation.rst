@@ -176,3 +176,16 @@ Not installed, but interesting/promising
 * AutocloseTag
 * SuperTab
 * Matchit
+
+Useful built in commands
+------------------------
+
+.. list-table::
+    :header-rows: 1
+    :widths: 1 2
+
+    * - **Command**
+      - **Description**
+
+    * - Visual + gq
+      - Reformat text file according to textwidth
