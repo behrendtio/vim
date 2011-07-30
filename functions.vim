@@ -68,8 +68,27 @@ endfunction
 function! CheckForUpgrade()
     let g:VimConfigUpdateCheck = 1
 
+    let home = expand("%:p:h")
+    let g:VimConfigUpdateCheckLockFile = home . '/updatecheck.lock'
+    let g:VimConfigUpdateCheckDelay = 432000 " 5 days in seconds...
+
     if !g:VimConfigUpdateCheck
         return
+    endif
+
+    let current = localtime()
+    if !filereadable(g:VimConfigUpdateCheckLockFile)
+        call writefile([current], g:VimConfigUpdateCheckLockFile)
+    else
+        let content = readfile(g:VimConfigUpdateCheckLockFile)
+        let lastcheck = content[0]+0 " Force conversion to number
+        let nextcheck = lastcheck+g:VimConfigUpdateCheckDelay
+
+        if current < nextcheck
+            return
+        else
+            call writefile([current], g:VimConfigUpdateCheckLockFile)
+        endif
     endif
 
     let output = "Vim configuration update checker\n--------------------------------\n\n"
