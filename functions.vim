@@ -111,12 +111,13 @@ function! CheckForUpgrade()
 
     execute 'lcd '.$HOME.'/.vim'
 
-    execute ':new'
-    execute ':res 20'
+    execute ':tabnew'
 
     silent put=output
 
     set filetype=rst
     set nomodified
+
+    execute ':tabp'
     redraw
 endfunction
