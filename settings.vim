@@ -52,7 +52,7 @@ set showbreak=...
 set splitright
 
 " Improve omni complete menu behaviour
-set completeopt=longest,menuone
+set completeopt=menu,preview
 
 " Show a dollar sign in change mode to mark the end
 set cpoptions+=$
