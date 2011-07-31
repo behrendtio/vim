@@ -68,8 +68,7 @@ endfunction
 function! CheckForUpgrade()
     let g:VimConfigUpdateCheck = 1
 
-    let home = expand("%:p:h")
-    let g:VimConfigUpdateCheckLockFile = home . '/updatecheck.lock'
+    let g:VimConfigUpdateCheckLockFile = $HOME . '/.vim/updatecheck.lock' " Not working in windows - who cares...
     let g:VimConfigUpdateCheckDelay = 432000 " 5 days in seconds...
 
     if !g:VimConfigUpdateCheck
