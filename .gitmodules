@@ -49,3 +49,6 @@
 [submodule "bundle/dbgp"]
 	path = bundle/dbgp
 	url = https://github.com/MarioBehrendt/DBGp-Remote-Debugger-Interface.git
+[submodule "bundle/color-solarized"]
+	path = bundle/color-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
