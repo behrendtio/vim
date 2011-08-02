@@ -133,8 +133,14 @@ let g:netrw_liststyle=3
 
 " If GVIM was opened
 if has("gui_running")
+    " Special solarized setting to get awesome diffs
+    let g:solarized_diffmode="high"
+
     " Set color scheme if using GVim
-    colors darkspectrum
+    colors solarized
+
+    " Light background theme (solarized comes with a dark one, too)
+    set background=light
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
