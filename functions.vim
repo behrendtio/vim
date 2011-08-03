@@ -120,3 +120,8 @@ function! CheckForUpgrade()
     execute ':tabp'
     redraw
 endfunction
+
+" Switch between light and dark background
+function! SwitchBackground()
+    let &background = (&background == "dark"? "light" : "dark")
+endfunction
