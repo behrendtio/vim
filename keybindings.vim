@@ -92,8 +92,8 @@ map <Leader>h3 yypVr~o
 nnoremap <tab> %
 vnoremap <tab> %
 
-" Switch between light and dark background with F11
-map <F11> :call SwitchBackground()<CR>
+" Switch between light and dark background with Control-F11
+map <C-F11> :call SwitchBackground()<CR>
 
 " Disable arrow keys for navigation
 " Use left and right arrow key for previous and next buffer
