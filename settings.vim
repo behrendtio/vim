@@ -8,11 +8,6 @@ set encoding=utf-8
 " No vi backward compatibility to vi
 set nocompatible
 
-" Set window position, width and height for start up
-winpos 0 0
-set lines=95
-au GUIEnter * set columns=350
-
 " Automatically read files when they were changed on the filesystem
 set autoread
 
@@ -133,6 +128,11 @@ let g:netrw_liststyle=3
 
 " If GVIM was opened
 if has("gui_running")
+    " Set window position, width and height for start up
+    winpos 0 0
+    set lines=95
+    au GUIEnter * set columns=350
+
     " Special solarized setting to get awesome diffs
     let g:solarized_diffmode="high"
 
