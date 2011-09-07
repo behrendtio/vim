@@ -11,6 +11,7 @@ iab druch durch
 
 " English
 iab teh the
+iab shippinh shipping
 
 " Programming
 iab 4this $this
