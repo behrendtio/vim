@@ -103,6 +103,7 @@ function! CheckForUpgrade()
         let output .= '**You need an update!**'
         let output .= "\n\n\nGit output\n----------\n\n"
         let output .= system("git pull origin master")
+        let output .= system("git submodule update --init")
         let output .= "\n==========================================\n"
         let output .= "You're up to date now (Please restart Vim)"
         let output .= "\n==========================================" 
