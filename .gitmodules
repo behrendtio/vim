@@ -46,9 +46,6 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "bundle/dbgp"]
-	path = bundle/dbgp
-	url = https://github.com/MarioBehrendt/DBGp-Remote-Debugger-Interface.git
 [submodule "bundle/color-solarized"]
 	path = bundle/color-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -66,4 +63,4 @@
 	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
-	url = git://github.com/Townk/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
