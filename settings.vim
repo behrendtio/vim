@@ -24,7 +24,7 @@ let mapleader = ","
 " 100 Marks, 1000 Registers, 100 Commands, 100 Searches, Buffer list
 set viminfo='100,f1,\"1000,:100,/100,%
 
-" Show line numbers 
+" Show line numbers
 set number
 
 " Enable spell checking
@@ -56,7 +56,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%t\ %m\ %r\ \ %y\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr\ 
+set stl=%t\ %m\ %r\ \ %y\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr
 
 " Set scroll off to 8 lines
 set scrolloff=8
@@ -220,7 +220,7 @@ let NERDTreeMinimalUI=1
 let tlist_php_settings='php;c:Class;d:Constants;f:Methods'
 
 " Show taglist on the right side
-let g:Tlist_Use_Right_Window=1 
+let g:Tlist_Use_Right_Window=1
 
 " Just show the tags for the current file in taglist
 let g:Tlist_Show_One_File=1
