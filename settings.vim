@@ -56,7 +56,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%t\ %m\ %r\ \ %y\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr
+set stl=%t\ %m\ %r\ \ %y\ \ %{fugitive#statusline()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr
 
 " Set scroll off to 8 lines
 set scrolloff=8
