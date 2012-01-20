@@ -19,9 +19,6 @@
 [submodule "bundle/latexsuite"]
 	path = bundle/latexsuite
 	url = https://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX
-[submodule "bundle/fuzzyfinder"]
-	path = bundle/fuzzyfinder
-	url = https://github.com/vim-scripts/FuzzyFinder
 [submodule "bundle/l9"]
 	path = bundle/l9
 	url = https://github.com/vim-scripts/L9
@@ -64,3 +61,6 @@
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
