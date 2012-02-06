@@ -101,6 +101,12 @@ Available self defined shortcuts and mappings
         h2: ---
         h3: ~~~
 
+    * - CTRL-P
+      - Open CTRL-P plugin (fuzzy finder alternative for buffer switching and file opening)
+
+    * - ,a= and ,a:
+      - Align visual selection based on "=" and ":" - useful for arrays, hashes, you name it
+
 Installed plugins
 -----------------
 
@@ -153,6 +159,12 @@ Installed plugins
     * - Unimpaired
       - Pairs of handy bracket mappings
 
+    * - CTRL-P
+      - Shiny new version of fuzzy finder
+
+    * - Tabular
+      - Aligns text based on a given pattern like "="
+
 Upgrading plugins
 -----------------
 
@@ -169,11 +181,8 @@ default answer, so be careful :) ::
 Not installed, but interesting/promising
 ----------------------------------------
 
-* **0scan**
-* Autoclose
+* 0scan
 * Conque-Term
-* PIV https://github.com/spf13/PIV
-* AutocloseTag
 * SuperTab
 * Matchit
 

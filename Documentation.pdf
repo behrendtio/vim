@@ -63,26 +63,10 @@ endobj
  /Subtype /Type1
  /Type /Font >>
 endobj
-% 'Annot.NUMBER1': class PDFDictionary 
-7 0 obj
-<< /A << /S /URI
- /Type /Action
- /URI (https://github.com/spf13/PIV) >>
- /Border [ 0
- 0
- 0 ]
- /Rect [ 104.5929
- 126.5736
- 229.6629
- 138.5736 ]
- /Subtype /Link
- /Type /Annot >>
-endobj
 % 'Page2': class PDFPage 
-8 0 obj
+7 0 obj
 % Page dictionary
-<< /Annots [ 7 0 R ]
- /Contents 19 0 R
+<< /Contents 19 0 R
  /MediaBox [ 0
  0
  595.2756
@@ -99,7 +83,7 @@ endobj
  /Type /Page >>
 endobj
 % 'Page3': class PDFPage 
-9 0 obj
+8 0 obj
 % Page dictionary
 << /Contents 20 0 R
  /MediaBox [ 0
@@ -117,97 +101,110 @@ endobj
  /Trans <<  >>
  /Type /Page >>
 endobj
-% 'R10': class PDFCatalog 
-10 0 obj
+% 'R9': class PDFCatalog 
+9 0 obj
 % Document Root
-<< /Outlines 12 0 R
+<< /Outlines 11 0 R
  /PageLabels 21 0 R
  /PageMode /UseNone
  /Pages 17 0 R
  /Type /Catalog >>
 endobj
-% 'R11': class PDFInfo 
-11 0 obj
+% 'R10': class PDFInfo 
+10 0 obj
 << /Author ()
- /CreationDate (D:20110710133152-01'00')
+ /CreationDate (D:20120206160615-01'00')
  /Creator (\(unspecified\))
  /Keywords ()
  /Producer (ReportLab PDF Library - www.reportlab.com)
  /Subject (\(unspecified\))
  /Title (Documentation) >>
 endobj
-% 'R12': class PDFOutlines 
-12 0 obj
-<< /Count 4
- /First 13 0 R
+% 'R11': class PDFOutlines 
+11 0 obj
+<< /Count 5
+ /First 12 0 R
  /Last 16 0 R
  /Type /Outlines >>
 endobj
 % 'Outline.0': class OutlineEntryObject 
-13 0 obj
+12 0 obj
 << /Dest [ 5 0 R
  /XYZ
  62.69291
  729.0236
  0 ]
- /Next 14 0 R
- /Parent 12 0 R
+ /Next 13 0 R
+ /Parent 11 0 R
  /Title (Available self defined shortcuts and mappings) >>
 endobj
 % 'Outline.1': class OutlineEntryObject 
-14 0 obj
-<< /Dest [ 8 0 R
+13 0 obj
+<< /Dest [ 7 0 R
  /XYZ
  62.69291
- 723.0236
+ 663.0236
  0 ]
- /Next 15 0 R
- /Parent 12 0 R
- /Prev 13 0 R
+ /Next 14 0 R
+ /Parent 11 0 R
+ /Prev 12 0 R
  /Title (Installed plugins) >>
 endobj
 % 'Outline.2': class OutlineEntryObject 
-15 0 obj
-<< /Dest [ 8 0 R
+14 0 obj
+<< /Dest [ 7 0 R
  /XYZ
  62.69291
- 372.0236
+ 276.0236
  0 ]
- /Next 16 0 R
- /Parent 12 0 R
- /Prev 14 0 R
+ /Next 15 0 R
+ /Parent 11 0 R
+ /Prev 13 0 R
  /Title (Upgrading plugins) >>
 endobj
 % 'Outline.3': class OutlineEntryObject 
+15 0 obj
+<< /Dest [ 7 0 R
+ /XYZ
+ 62.69291
+ 131.8236
+ 0 ]
+ /Next 16 0 R
+ /Parent 11 0 R
+ /Prev 14 0 R
+ /Title (Not installed, but interesting/promising) >>
+endobj
+% 'Outline.4': class OutlineEntryObject 
 16 0 obj
 << /Dest [ 8 0 R
  /XYZ
  62.69291
- 227.8236
+ 699.0236
  0 ]
- /Parent 12 0 R
+ /Parent 11 0 R
  /Prev 15 0 R
- /Title (Not installed, but interesting/promising) >>
+ /Title (Useful built in commands) >>
 endobj
 % 'R17': class PDFPages 
 17 0 obj
 % page tree
 << /Count 3
  /Kids [ 5 0 R
- 8 0 R
- 9 0 R ]
+ 7 0 R
+ 8 0 R ]
  /Type /Pages >>
 endobj
 % 'R18': class PDFStream 
 18 0 obj
 % page stream
-<< /Length 9942 >>
+<< /Length 9936 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 62.69291 741.0236 cm
 q
-BT 1 0 0 1 0 4 Tm 162.1649 0 Td 24 TL /F2 20 Tf 0 0 0 rg (Documentation) Tj T* -162.1649 0 Td ET
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 162.1649 0 Td (Documentation) Tj T* -162.1649 0 Td ET
 Q
 Q
 q
@@ -634,7 +631,7 @@ q
 1 0 0 1 162.6299 69 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Compile current file with rst2pdf and open corresponding PDF file) Tj T* (with evince \(linux document viewer, should be tweaked if other) Tj T* (viewers or operating system are used\)) Tj T* ET
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Compile current file with rst2pdf and open corresponding PDF file) Tj T* (with default pdf viewer \(currently works for linux systems running) Tj T* (gnome and apple computers\)) Tj T* ET
 Q
 Q
 q
@@ -724,27 +721,59 @@ endobj
 % 'R19': class PDFStream 
 19 0 obj
 % page stream
-<< /Length 9440 >>
+<< /Length 8942 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 675.0236 cm
+1 1 1 rg
+n 0 90 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 60 469.8898 -30 re f*
 1 1 1 rg
 n 0 30 469.8898 -30 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 15 cm
+1 0 0 1 6 75 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (,h1 / ,h2 / ,h3) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 3 cm
+1 0 0 1 162.6299 63 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Inserts rst headline marks under the current line - no column) Tj T* (counting any more :\) h1: === h2: --- h3: ~~~) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CTRL-P) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.6299 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Open CTRL-P plugin \(fuzzy finder alternative for buffer switching) Tj T* (and file opening\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (,a= and ,a:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.6299 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Align visual selection based on "=" and ":" - useful for arrays,) Tj T* (hashes, you name it) Tj T* ET
 Q
 Q
 q
@@ -752,45 +781,51 @@ q
 1 j
 0 0 0 RG
 .25 w
+n 0 90 m 469.8898 90 l S
+n 0 60 m 469.8898 60 l S
 n 0 30 m 469.8898 30 l S
-n 156.6299 0 m 156.6299 30 l S
-n 0 0 m 0 30 l S
-n 469.8898 0 m 469.8898 30 l S
+n 156.6299 0 m 156.6299 90 l S
+n 0 0 m 0 90 l S
+n 469.8898 0 m 469.8898 90 l S
 n 0 0 m 469.8898 0 l S
 Q
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 675.0236 cm
 Q
 q
-1 0 0 1 62.69291 702.0236 cm
+1 0 0 1 62.69291 642.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Installed plugins) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 690.0236 cm
+1 0 0 1 62.69291 630.0236 cm
 Q
 q
-1 0 0 1 62.69291 384.0236 cm
+1 0 0 1 62.69291 288.0236 cm
 1 1 1 rg
-n 0 306 469.8898 -18 re f*
+n 0 342 469.8898 -18 re f*
 .878431 .878431 .878431 rg
-n 0 288 469.8898 -18 re f*
+n 0 324 469.8898 -18 re f*
 1 1 1 rg
-n 0 270 469.8898 -30 re f*
+n 0 306 469.8898 -30 re f*
 .878431 .878431 .878431 rg
-n 0 240 469.8898 -18 re f*
+n 0 276 469.8898 -18 re f*
 1 1 1 rg
-n 0 222 469.8898 -30 re f*
+n 0 258 469.8898 -30 re f*
+.878431 .878431 .878431 rg
+n 0 228 469.8898 -18 re f*
+1 1 1 rg
+n 0 210 469.8898 -18 re f*
 .878431 .878431 .878431 rg
 n 0 192 469.8898 -18 re f*
 1 1 1 rg
-n 0 174 469.8898 -18 re f*
+n 0 174 469.8898 -30 re f*
 .878431 .878431 .878431 rg
-n 0 156 469.8898 -18 re f*
+n 0 144 469.8898 -18 re f*
 1 1 1 rg
-n 0 138 469.8898 -30 re f*
+n 0 126 469.8898 -18 re f*
 .878431 .878431 .878431 rg
 n 0 108 469.8898 -18 re f*
 1 1 1 rg
@@ -804,11 +839,11 @@ n 0 36 469.8898 -18 re f*
 1 1 1 rg
 n 0 18 469.8898 -18 re f*
 .960784 .960784 .862745 rg
-n 0 306 469.8898 -18 re f*
+n 0 342 469.8898 -18 re f*
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 291 cm
+1 0 0 1 6 327 cm
 q
 .960784 .960784 .862745 rg
 n 0 0 144.6299 12 re f*
@@ -819,7 +854,7 @@ BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 57.03496 0 Td (Plugin) Tj T* -57.03496 0 Td ET
 Q
 Q
 q
-1 0 0 1 162.6299 291 cm
+1 0 0 1 162.6299 327 cm
 q
 .960784 .960784 .862745 rg
 n 0 0 301.2598 12 re f*
@@ -831,199 +866,227 @@ Q
 Q
 0 0 0 rg
 q
-1 0 0 1 6 273 cm
+1 0 0 1 6 309 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (SnipMate) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 273 cm
+1 0 0 1 162.6299 309 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Basic snippet engine like those in eclipse or textmate) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 255 cm
+1 0 0 1 6 291 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (FuzzyFinder) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 243 cm
+1 0 0 1 162.6299 279 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Powerful fuzzy finding engine for files, buffers and a lot of other) Tj T* (things) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 225 cm
+1 0 0 1 6 261 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (L9) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 225 cm
+1 0 0 1 162.6299 261 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Functional library required by FuzzyFinder) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 207 cm
+1 0 0 1 6 243 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Gundo) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 195 cm
+1 0 0 1 162.6299 231 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (A graphical representation of Vims branching history, your vim) Tj T* (internal repository - really great for coding!) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 177 cm
+1 0 0 1 6 213 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Latex-Suite) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 177 cm
+1 0 0 1 162.6299 213 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Well known latex suite with many shortcuts and features) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 159 cm
+1 0 0 1 6 195 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (NERDtree) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 159 cm
+1 0 0 1 162.6299 195 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The missing \(awesome\) file explorer in Vim - simple and feature rich) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 141 cm
+1 0 0 1 6 177 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Taglist) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 141 cm
+1 0 0 1 162.6299 177 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A basic outline like representation of the current class/file) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 123 cm
+1 0 0 1 6 159 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (XMLEdit) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 111 cm
+1 0 0 1 162.6299 147 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Small plugin which provides useful xml behaviour like auto closing) Tj T* (tags) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 93 cm
+1 0 0 1 6 129 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Fugitive) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 93 cm
+1 0 0 1 162.6299 129 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Best.Git.Plugin.Ever) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 75 cm
+1 0 0 1 6 111 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (MRU) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 75 cm
+1 0 0 1 162.6299 111 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (List of last edited files) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 57 cm
+1 0 0 1 6 93 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Pastie) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 57 cm
+1 0 0 1 162.6299 93 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Send single lines, ranges and visual selections directly to pastie) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 39 cm
+1 0 0 1 6 75 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (PHP documentor) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 39 cm
+1 0 0 1 162.6299 75 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Generates phpdoc blocks, as mentioned in the shortcuts table \(,d\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 21 cm
+1 0 0 1 6 57 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Better PHP completion) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 21 cm
+1 0 0 1 162.6299 57 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Provides a better php completion behaviour then Vims own one) Tj T* ET
 Q
 Q
 q
-1 0 0 1 6 3 cm
+1 0 0 1 6 39 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Unimpaired) Tj T* ET
 Q
 Q
 q
-1 0 0 1 162.6299 3 cm
+1 0 0 1 162.6299 39 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Pairs of handy bracket mappings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CTRL-P) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.6299 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Shiny new version of fuzzy finder) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Tabular) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.6299 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Aligns text based on a given pattern like "=") Tj T* ET
 Q
 Q
 q
@@ -1031,44 +1094,46 @@ q
 1 j
 0 0 0 RG
 .25 w
-n 0 288 m 469.8898 288 l S
-n 0 270 m 469.8898 270 l S
-n 0 240 m 469.8898 240 l S
-n 0 222 m 469.8898 222 l S
+n 0 324 m 469.8898 324 l S
+n 0 306 m 469.8898 306 l S
+n 0 276 m 469.8898 276 l S
+n 0 258 m 469.8898 258 l S
+n 0 228 m 469.8898 228 l S
+n 0 210 m 469.8898 210 l S
 n 0 192 m 469.8898 192 l S
 n 0 174 m 469.8898 174 l S
-n 0 156 m 469.8898 156 l S
-n 0 138 m 469.8898 138 l S
+n 0 144 m 469.8898 144 l S
+n 0 126 m 469.8898 126 l S
 n 0 108 m 469.8898 108 l S
 n 0 90 m 469.8898 90 l S
 n 0 72 m 469.8898 72 l S
 n 0 54 m 469.8898 54 l S
 n 0 36 m 469.8898 36 l S
 n 0 18 m 469.8898 18 l S
-n 156.6299 0 m 156.6299 306 l S
-n 0 306 m 469.8898 306 l S
+n 156.6299 0 m 156.6299 342 l S
+n 0 342 m 469.8898 342 l S
 n 0 0 m 469.8898 0 l S
-n 0 0 m 0 306 l S
-n 469.8898 0 m 469.8898 306 l S
+n 0 0 m 0 342 l S
+n 469.8898 0 m 469.8898 342 l S
 Q
 Q
 q
-1 0 0 1 62.69291 384.0236 cm
+1 0 0 1 62.69291 288.0236 cm
 Q
 q
-1 0 0 1 62.69291 351.0236 cm
+1 0 0 1 62.69291 255.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Upgrading plugins) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 297.0236 cm
+1 0 0 1 62.69291 201.0236 cm
 q
 BT 1 0 0 1 0 38 Tm .189982 Tw 12 TL /F1 10 Tf 0 0 0 rg (You can easily upgrade all submodules using my ) Tj /F3 10 Tf (updateSubmodules.sh ) Tj /F1 10 Tf (script, which comes shipped with) Tj T* 0 Tw .347381 Tw (this repo. To do so, just make the script executable and run it. At the end you will be asked if you want to) Tj T* 0 Tw 1.759513 Tw (delete the created log file - if you hit the enter key the log will be deleted, cause 'Yes' is the default) Tj T* 0 Tw (answer, so be careful :\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 239.8236 cm
+1 0 0 1 62.69291 143.8236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -1089,19 +1154,19 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 206.8236 cm
+1 0 0 1 62.69291 110.8236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Not installed, but interesting/promising) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 194.8236 cm
+1 0 0 1 62.69291 98.82362 cm
 Q
 q
-1 0 0 1 62.69291 194.8236 cm
+1 0 0 1 62.69291 98.82362 cm
 Q
 q
-1 0 0 1 62.69291 176.8236 cm
+1 0 0 1 62.69291 80.82362 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -1115,47 +1180,29 @@ q
 1 0 0 1 23 3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (0scan) Tj T* ET
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (0scan) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 176.8236 cm
+1 0 0 1 62.69291 80.82362 cm
 Q
 q
-1 0 0 1 62.69291 176.8236 cm
+1 0 0 1 62.69291 80.82362 cm
 Q
+ 
+endstream
+endobj
+% 'R20': class PDFStream 
+20 0 obj
+% page stream
+<< /Length 2316 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 158.8236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Autoclose) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 158.8236 cm
-Q
-q
-1 0 0 1 62.69291 158.8236 cm
-Q
-q
-1 0 0 1 62.69291 140.8236 cm
+1 0 0 1 62.69291 747.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -1176,66 +1223,13 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 140.8236 cm
+1 0 0 1 62.69291 747.0236 cm
 Q
 q
-1 0 0 1 62.69291 140.8236 cm
+1 0 0 1 62.69291 747.0236 cm
 Q
 q
-1 0 0 1 62.69291 122.8236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (PIV ) Tj 0 0 .501961 rg (https://github.com/spf13/PIV) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 122.8236 cm
-Q
-q
-1 0 0 1 62.69291 122.8236 cm
-Q
-q
-1 0 0 1 62.69291 104.8236 cm
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (AutocloseTag) Tj T* ET
-Q
-Q
-q
-Q
-Q
-q
-1 0 0 1 62.69291 104.8236 cm
-Q
-q
-1 0 0 1 62.69291 104.8236 cm
-Q
-q
-1 0 0 1 62.69291 86.82362 cm
+1 0 0 1 62.69291 729.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -1256,22 +1250,13 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 86.82362 cm
+1 0 0 1 62.69291 729.0236 cm
 Q
 q
-1 0 0 1 62.69291 86.82362 cm
+1 0 0 1 62.69291 729.0236 cm
 Q
- 
-endstream
-endobj
-% 'R20': class PDFStream 
-20 0 obj
-% page stream
-<< /Length 394 >>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 711.0236 cm
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
@@ -1292,10 +1277,82 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 711.0236 cm
 Q
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 711.0236 cm
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Useful built in commands) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+Q
+q
+1 0 0 1 62.69291 630.0236 cm
+1 1 1 rg
+n 0 36 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 36 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 144.6299 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 47.86996 0 Td (Command) Tj T* -47.86996 0 Td ET
+Q
+Q
+q
+1 0 0 1 162.6299 21 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 301.2598 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 123.1249 0 Td (Description) Tj T* -123.1249 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Visual + gq) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.6299 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Reformat text file according to textwidth) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 18 m 469.8898 18 l S
+n 156.6299 0 m 156.6299 36 l S
+n 0 36 m 469.8898 36 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 36 l S
+n 469.8898 0 m 469.8898 36 l S
+Q
+Q
+q
+1 0 0 1 62.69291 630.0236 cm
 Q
  
 endstream
@@ -1337,32 +1394,32 @@ xref
 0000000585 00000 n
 0000000764 00000 n
 0000001045 00000 n
-0000001218 00000 n
-0000001450 00000 n
-0000001749 00000 n
-0000002029 00000 n
-0000002188 00000 n
-0000002449 00000 n
-0000002574 00000 n
-0000002779 00000 n
-0000002971 00000 n
-0000003163 00000 n
-0000003347 00000 n
-0000003470 00000 n
-0000013511 00000 n
-0000023050 00000 n
-0000023546 00000 n
-0000023665 00000 n
-0000023742 00000 n
-0000023819 00000 n
+0000001204 00000 n
+0000001483 00000 n
+0000001762 00000 n
+0000001920 00000 n
+0000002181 00000 n
+0000002306 00000 n
+0000002511 00000 n
+0000002703 00000 n
+0000002895 00000 n
+0000003110 00000 n
+0000003278 00000 n
+0000003401 00000 n
+0000013436 00000 n
+0000022477 00000 n
+0000024896 00000 n
+0000025015 00000 n
+0000025092 00000 n
+0000025169 00000 n
 trailer
 << /ID 
  % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
- [(\030\343\214s\302H\363\303Q\364E8\351\022\330\235) (\030\343\214s\302H\363\303Q\364E8\351\022\330\235)] 
+ [(\3548s\030\357\2768\347*\033\033\275\227\274nt) (\3548s\030\357\2768\347*\033\033\275\227\274nt)] 
 
- /Info 11 0 R
- /Root 10 0 R
+ /Info 10 0 R
+ /Root 9 0 R
  /Size 25 >>
 startxref
-23866
+25216
 %%EOF
