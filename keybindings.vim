@@ -95,6 +95,10 @@ vnoremap <tab> %
 " Switch between light and dark background with Control-F11
 map <C-F11> :call SwitchBackground()<CR>
 
+" Shortcuts for tabular plugin
+vmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a: :Tabularize /=\zs<CR>
+
 " Disable arrow keys for navigation
 " Use left and right arrow key for previous and next buffer
 " USe up and down to bubbling lines
