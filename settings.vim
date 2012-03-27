@@ -119,7 +119,7 @@ au FocusLost * :wa
 " Enable syntax highlighting of SQL and HTML within PHP files and set PHP folding and error handling
 let php_sql_query=1
 let php_htmlInStrings=1
-"let php_folding=1 " Slow on macs for some reason...
+"let php_folding=1 " Slow on macs for some reason, maybe: http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
 let php_parent_error_close=1
 let php_parent_error_open=1
 
