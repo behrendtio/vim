@@ -1,6 +1,6 @@
 " Don't let Vim create new lines at the end of file
 " Attention: This should be on the very top, because it overrides settings like 'textwidth'
-"set binary
+set binary
 
 " Set UTF-8 as default encoding
 set encoding=utf-8
@@ -56,7 +56,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%t\ %m\ %r\ \ %y\ \ %{fugitive#statusline()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr
+set stl=%t\ %m\ %r\ \ %y\ \ %{fugitive#statusline()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr\ \ 
 
 " Set scroll off to 8 lines
 set scrolloff=8
@@ -133,9 +133,6 @@ if has("gui_running")
     set lines=95
     au GUIEnter * set columns=350
 
-    " Special solarized setting to get awesome diffs
-    let g:solarized_diffmode="high"
-
     " Set color scheme if using GVim
     colors solarized
 
@@ -160,7 +157,19 @@ if has("gui_running")
     " Disable right scroll bar (normal and vsplit one)
     set guioptions-=r
     set guioptions-=R
+else
+    " Use different colorscheme in terminal
+    " Plus dark background
+
+    set background=dark
+    colors desert
 endif
+
+" Special solarized setting to get awesome diffs
+let g:solarized_diffmode="high"
+
+" Make solarized show stuff like eol and tabs a bit lighter than normal
+let g:solarized_visibility="low"
 
 " Highlight current line
 set cursorline
@@ -168,8 +177,12 @@ set cursorline
 " Indent based on previous line
 set autoindent
 
-" Change signs for end of line and tabs (needs :set list)
-set listchars=tab:▸\ ,eol:¬
+" Change signs for end of line, trailing whitespaces and tabs (needs :set list)
+"set listchars=tab:▸\ ,eol:¬,trail:\·
+set listchars=tab:▸\ ,trail:\·
+
+" Show stuff like end of line, tabs and so on
+set list
 
 " Set color column if using Vim 7.3+
 if v:version >= 703
@@ -180,17 +193,15 @@ if v:version >= 703
     "hi ColorColumn ctermbg=233 guibg=#3C3C3C
 endif
 
-" Detect .phtml files as PHP
+" Detect .phtml and .tpl files as PHP
 autocmd BufNewFile,BufRead *.phtml set ft=php
+autocmd BufNewFile,BufRead *.tpl set ft=php
 
 
 
 "------------------------------------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------------------------------
-
-" Open VCSCommand's splut function vertical
-"let VCSCommandSplit = 'vertical'
 
 " Set latex output format to PDF
 let g:Tex_DefaultTargetFormat = "pdf"
