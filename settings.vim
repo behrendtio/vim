@@ -197,6 +197,9 @@ endif
 autocmd BufNewFile,BufRead *.phtml set ft=php
 autocmd BufNewFile,BufRead *.tpl set ft=php
 
+" 2 space indenting for javascript files
+autocmd BufRead *.js set ts=2 sts=2 sw=2 expandtab
+
 
 
 "------------------------------------------------------------------------------
