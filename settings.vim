@@ -129,9 +129,9 @@ let g:netrw_liststyle=3
 " If GVIM was opened
 if has("gui_running")
     " Set window position, width and height for start up
-    winpos 0 0
-    set lines=95
-    au GUIEnter * set columns=350
+    "winpos 0 0
+    "set lines=95
+    "au GUIEnter * set columns=350
 
     " Set color scheme if using GVim
     colors solarized
