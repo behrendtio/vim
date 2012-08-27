@@ -14,25 +14,6 @@ function! s:ExecuteInShell(command)
 endfunction
 command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
-" Builds tags file
-function! BuildTags()
-    let cmd = '!ctags -R --languages=php --totals=yes --tag-relative=yes --PHP-kinds=+cf-v .'
-    execute cmd
-endfunction
-
-" Opens the regarding Unit Test to a PHP file (needs ZF like folder stucture)
-function! OpenPHPUnitTest()
-    let file = 'tests/' . substitute(expand('%s'), '.php', '', '') . 'Test.php'
-    let cmd  = 'vs ' . file
-    execute cmd
-endfunction
-
-" Opens scratch markdown file
-function! OpenScratchRst()
-    let cmd = 'vs ~/Desktop/Scratch.rst'
-    execute cmd
-endfunction
-
 " Format whole file according to the filetype and vims syntax settings
 function! FormatFile()
     execute "normal! mf"

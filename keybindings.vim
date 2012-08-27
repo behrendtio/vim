@@ -14,12 +14,6 @@ imap <C-s> <Esc>:w<CR>a
 " Close buffer with CTRL-C
 map <C-c> :bd<CR>
 
-" Open FuzzyFinder (and load all files in all sub directories) with ,o
-map <Leader>o :FufFile **/<CR>
-
-" Buffer FuzzyFinder with ,b
-map <Leader>b :FufBuffer<CR>
-
 " Gundo side bar with ,g
 map <Leader>g :GundoToggle<CR>
 
@@ -38,14 +32,8 @@ map <leader>u <Esc>:MRU<CR>
 " Toggle taglist with ,l
 map <silent> <leader>l <Esc>:TlistToggle<CR>
 
-" Create PHPDoc blocks with ,d
-noremap <leader>d <Esc>:call PhpDoc()<CR>
-
 " Search tag with ,s
 nmap <Leader>s <Esc>:tag<space>
-
-" Run exuberant-ctags with ,c (in the current folder)
-nmap <Leader>c <Esc>:w<CR>:call BuildTags()<CR>
 
 " Jump to tag with ,j
 nmap <Leader>j <Esc><C-]>
@@ -55,18 +43,6 @@ nmap <Leader>r <Esc>:w<CR>:!clear; php %:p<CR>
 
 " Run current PHP file through linter
 nmap <Leader>rl <Esc>:w<CR>:!php -l %<CR>
-
-" Start unit test of the current test with ,p
-nmap <Leader>p <Esc>:w<CR>:!clear; cd tests/; phpunit %:p; cd ..<CR>
-
-" Run all unit tests with ,P
-nmap <Leader>P <Esc>:w<CR>:!clear; cd tests/; phpunit; cd ..<CR>
-
-" Jump to the unit test of the current file with ,op
-nmap <Leader>op <Esc>:w<CR>:call OpenPHPUnitTest()<CR>
-
-" Open scratch markdown buffer with ,xx
-nmap <Leader>xx <Esc>:call OpenScratchRst()<CR>
 
 " Format whole file with ,f
 nmap <Leader>f <Esc>:call FormatFile()<CR>
