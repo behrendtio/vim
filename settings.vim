@@ -230,14 +230,6 @@ let NERDTreeDirArrows=1
 " Start NERDTree in minimal UI mode (No help lines)
 let NERDTreeMinimalUI=1
 
-" Show only class name, constants and class methods on taglist
-let tlist_php_settings='php;c:Class;d:Constants;f:Methods'
+" Open CtrlP window in buffer mode by default
+let g:ctrlp_cmd = 'CtrlPBuffer'
 
-" Show taglist on the right side
-let g:Tlist_Use_Right_Window=1
-
-" Just show the tags for the current file in taglist
-let g:Tlist_Show_One_File=1
-
-" Set taglist width
-let g:Tlist_WinWidth=50
