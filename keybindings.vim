@@ -20,6 +20,9 @@ map <Leader>g :GundoToggle<CR>
 " Toggle NERDtree with ,n
 map <Leader>n :NERDTreeToggle<CR>
 
+" Toggle code comment with NERDCommenter
+vmap <Leader>c :call NERDComment("nx", "Toggle")<CR>
+
 " Switch to the alternate buffer with ,SPACE
 nnoremap <leader><space> :<Esc>:b#<CR>
 
