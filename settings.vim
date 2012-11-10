@@ -1,7 +1,3 @@
-" Don't let Vim create new lines at the end of file
-" Attention: This should be on the very top, because it overrides settings like 'textwidth'
-set binary
-
 " Set UTF-8 as default encoding
 set encoding=utf-8
 
@@ -56,7 +52,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%t\ %m\ %r\ \ %y\ \ %{fugitive#statusline()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n%=%{strftime('%H:%M')}\ Uhr\ \ 
+set stl=%t\ %m\ %r\ \ %y\ \ %{fugitive#statusline()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n
 
 " Set scroll off to 8 lines
 set scrolloff=8
@@ -74,8 +70,8 @@ set hlsearch
 " Already jump to the first hit during a search process
 set incsearch
 
-" Folding depending on indent (maybe use syntax)
-set foldmethod=indent
+" Folding depending on indent
+set foldmethod=syntax
 
 " Open all folds when opening a new file
 set nofoldenable
@@ -109,9 +105,6 @@ filetype plugin on
 " Automatically indent based on file extension
 filetype indent on
 
-" Enable (the better) PHP completion
-au FileType php set omnifunc=phpcomplete#CompletePHP
-
 " Save the file if focus is lost (very handy)
 " Attention: Does not work in terminal vim ;-)
 au FocusLost * :wa
@@ -128,21 +121,21 @@ let g:netrw_liststyle=3
 
 " If GVIM was opened
 if has("gui_running")
-    " Set window position, width and height for start up
-    "winpos 0 0
-    "set lines=95
-    "au GUIEnter * set columns=350
-
     " Set color scheme if using GVim
-    colors solarized
+    colors smyck
 
     " Light background theme (solarized comes with a dark one, too)
-    set background=light
+    set background=dark
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
-    "set guifont=Monaco\ 9
-    set guifont=Monospace\ 8
+    "
+    " If mac, go for Menlo, otherwise use Monospace
+    if has('mac') || has('macunix')
+        set guifont=Menlo\ Regular:h12
+    else
+        set guifont=Monospace\ 12
+    endif
 
     " Disable menu bar
     set guioptions-=m
@@ -159,10 +152,10 @@ if has("gui_running")
     set guioptions-=R
 else
     " Use different colorscheme in terminal
-    " Plus dark background
+    colors smyck
 
-    set background=dark
-    colors desert
+    " Plus dark background
+    set background=light
 endif
 
 " Special solarized setting to get awesome diffs
@@ -184,36 +177,18 @@ set listchars=tab:▸\ ,trail:\·
 " Show stuff like end of line, tabs and so on
 set list
 
-" Set color column if using Vim 7.3+
-if v:version >= 703
-    " Set color column to textwidth -39 and +1 (Columns 81 and 121)
-    "set colorcolumn=-39,+1
-
-    " Set color column color
-    "hi ColorColumn ctermbg=233 guibg=#3C3C3C
-endif
-
 " Detect .phtml and .tpl files as PHP
 autocmd BufNewFile,BufRead *.phtml set ft=php
 autocmd BufNewFile,BufRead *.tpl set ft=php
 
-" 2 space indenting for javascript files
-autocmd BufRead *.js set ts=2 sts=2 sw=2 expandtab
-
+" 2 space indenting for javascript and json files
+autocmd BufNewFile,BufRead *.js set ts=2 sts=2 sw=2 expandtab
+autocmd BufNewFile,BufRead *.json set ts=2 sts=2 sw=2 expandtab
 
 
 "------------------------------------------------------------------------------
 " Plugin settings
 " -----------------------------------------------------------------------------
-
-" Set latex output format to PDF
-let g:Tex_DefaultTargetFormat = "pdf"
-
-" Detect empty .tex file as latex
-let g:tex_flavor='latex'
-
-" Automatically compile to dvi and pdf when comiling a tex file
-let g:Tex_MultipleCompileFormats = "dvi,pdf"
 
 " Initial NERDTree width
 let NERDTreeWinSize=50
@@ -230,6 +205,6 @@ let NERDTreeDirArrows=1
 " Start NERDTree in minimal UI mode (No help lines)
 let NERDTreeMinimalUI=1
 
-" Open CtrlP window in buffer mode by default
-let g:ctrlp_cmd = 'CtrlPBuffer'
+" Open CtrlP window in mixed mode by default
+let g:ctrlp_cmd = 'CtrlPMixed'
 

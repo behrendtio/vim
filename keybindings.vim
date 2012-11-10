@@ -29,35 +29,17 @@ nnoremap <leader><space> :<Esc>:b#<CR>
 " Open vimrc file with ,v
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
-" Show recently opened files with ,u
-map <leader>u <Esc>:MRU<CR>
-
-" Toggle taglist with ,l
-map <silent> <leader>l <Esc>:TlistToggle<CR>
-
 " Search tag with ,s
 nmap <Leader>s <Esc>:tag<space>
 
 " Jump to tag with ,j
 nmap <Leader>j <Esc><C-]>
 
-" Run current PHP file in interpreter
-nmap <Leader>r <Esc>:w<CR>:!clear; php %:p<CR>
-
-" Run current PHP file through linter
-nmap <Leader>rl <Esc>:w<CR>:!php -l %<CR>
-
 " Format whole file with ,f
 nmap <Leader>f <Esc>:call FormatFile()<CR>
 
-" Compile rst file and open according pdf
-nmap <Leader>qq <Esc>:w<CR>:call CompileRst()<CR>
-
 " Run XML file through linter with ,xl
 nmap <Leader>xl :call RunXmlLint()<CR>
-
-" Open ToDo file from dropbox
-nmap <Leader>t :tabnew ~/Dropbox/Todo.rst<CR>
 
 " Re-open file with windows line endings
 nmap <Leader>dos :e ++ff=dos<CR>

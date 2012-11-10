@@ -4,24 +4,9 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim
-[submodule "bundle/mru"]
-	path = bundle/mru
-	url = https://github.com/vim-scripts/mru.vim
-[submodule "bundle/pastie"]
-	path = bundle/pastie
-	url = https://github.com/tpope/vim-pastie
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = https://github.com/sukima/xmledit
-[submodule "bundle/latexsuite"]
-	path = bundle/latexsuite
-	url = https://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX
-[submodule "bundle/l9"]
-	path = bundle/l9
-	url = https://github.com/vim-scripts/L9
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
@@ -31,15 +16,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/MarioBehrendt/snipmate.vim
-[submodule "bundle/phpcomplete"]
-	path = bundle/phpcomplete
-	url = https://github.com/shawncplus/phpcomplete.vim.git
-[submodule "bundle/php"]
-	path = bundle/php
-	url = https://github.com/vim-scripts/php.vim--Garvin.git
-[submodule "bundle/pdv"]
-	path = bundle/pdv
-	url = https://github.com/MarioBehrendt/PDV--phpDocumentor-for-Vim
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
