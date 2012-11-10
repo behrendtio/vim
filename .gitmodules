@@ -37,9 +37,6 @@
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -52,3 +49,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
