@@ -81,7 +81,7 @@ set nobackup
 set noswapfile
 
 " Set tab width, tab width on deletion and of course use spaces instead of tabs
-set ts=4 sts=4 sw=4 expandtab
+set ts=2 sts=2 sw=2 expandtab
 
 " Make the backspace key act like it does in any editor (remove characters, indentation and end of lines)
 set backspace=indent,eol,start
@@ -181,9 +181,9 @@ set list
 autocmd BufNewFile,BufRead *.phtml set ft=php
 autocmd BufNewFile,BufRead *.tpl set ft=php
 
-" 2 space indenting for javascript and json files
-autocmd BufNewFile,BufRead *.js set ts=2 sts=2 sw=2 expandtab
-autocmd BufNewFile,BufRead *.json set ts=2 sts=2 sw=2 expandtab
+" 4 space indenting for some specific file types
+autocmd BufNewFile,BufRead *.php set ts=4 sts=4 sw=4 expandtab
+autocmd BufNewFile,BufRead *.phtml set ts=4 sts=4 sw=4 expandtab
 
 
 "------------------------------------------------------------------------------
