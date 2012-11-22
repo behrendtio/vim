@@ -208,3 +208,6 @@ let NERDTreeMinimalUI=1
 " Open CtrlP window in mixed mode by default
 let g:ctrlp_cmd = 'CtrlPMixed'
 
+" Search in folder the contains .git and go upwards from current file to find it
+let g:ctrlp_working_path_mode = 'r'
+
