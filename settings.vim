@@ -119,13 +119,14 @@ let php_parent_error_open=1
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
+" Set color scheme
+colors solarized
+
+" Black background theme
+set background=dark
+
 " If GVIM was opened
 if has("gui_running")
-    " Set color scheme if using GVim
-    colors smyck
-
-    " Light background theme (solarized comes with a dark one, too)
-    set background=dark
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
@@ -150,13 +151,10 @@ if has("gui_running")
     " Disable right scroll bar (normal and vsplit one)
     set guioptions-=r
     set guioptions-=R
-else
-    " Use different colorscheme in terminal
-    colors smyck
-
-    " Plus dark background
-    set background=light
 endif
+
+" Set line spacing
+set linespace=1
 
 " Special solarized setting to get awesome diffs
 let g:solarized_diffmode="high"
