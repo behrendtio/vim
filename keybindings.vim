@@ -71,3 +71,10 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <Esc>:bp<CR>
 inoremap <right> <Esc>:bn<CR>
+
+" Use first five tabs like in Chrome or Sublime (Command-$Number)
+map <D-1> 1gt
+map <D-2> 2gt
+map <D-3> 3gt
+map <D-4> 4gt
+map <D-5> 5gt
