@@ -119,6 +119,9 @@ let php_parent_error_open=1
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
+" Set line spacing
+set linespace=3
+
 " Set color scheme
 colors solarized
 
@@ -133,9 +136,9 @@ if has("gui_running")
     "
     " If mac, go for Menlo, otherwise use Monospace
     if has('mac') || has('macunix')
-        set guifont=Menlo\ Regular:h12
+        set guifont=Menlo\ Regular:h10
     else
-        set guifont=Monospace\ 12
+        set guifont=Monospace\ 10
     endif
 
     " Disable menu bar
@@ -152,9 +155,6 @@ if has("gui_running")
     set guioptions-=r
     set guioptions-=R
 endif
-
-" Set line spacing
-set linespace=1
 
 " Special solarized setting to get awesome diffs
 let g:solarized_diffmode="high"
