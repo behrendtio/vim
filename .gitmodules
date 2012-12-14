@@ -34,9 +34,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade.git
-[submodule "bundle/autoclose"]
-	path = bundle/autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git

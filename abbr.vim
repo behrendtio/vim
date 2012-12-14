@@ -1,8 +1,6 @@
 " Common
 iab mbmail info@mario-behrendt.de
-iab nrmail mario.behrendt@netresearch.de
-iab netresaerch netresearch
-iab netreseaerch netresearch
+iab ymail mario@yanted.com
 
 " German
 iab solte sollte
@@ -12,6 +10,7 @@ iab druch durch
 " English
 iab teh the
 iab shippinh shipping
+iab quoe quote
 
 " Programming
 iab 4this $this
@@ -22,3 +21,6 @@ iab githuv github
 iab tempalte template
 iab reutrn return
 iab edn end
+iab dfe def
+iab modle model
+iab exporst exports
