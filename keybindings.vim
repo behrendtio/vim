@@ -4,9 +4,6 @@ cmap w!! w !sudo tee % >/dev/null
 " Exit insert mode with jj
 map! jj <Esc>
 
-" Use Enter for omni complete as same as in eclipse/netbeans
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 " Save with CTRl-S
 map <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a

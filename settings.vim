@@ -119,11 +119,11 @@ let php_parent_error_open=1
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
-" Set line spacing
-set linespace=3
-
 " Set color scheme
 colors solarized
+
+" Set line spacing
+set linespace=0
 
 " Black background theme
 set background=dark
@@ -136,9 +136,9 @@ if has("gui_running")
     "
     " If mac, go for Menlo, otherwise use Monospace
     if has('mac') || has('macunix')
-        set guifont=Menlo\ Regular:h10
+        set guifont=Menlo\ Regular:h12
     else
-        set guifont=Monospace\ 10
+        set guifont=Monospace\ 12
     endif
 
     " Disable menu bar
