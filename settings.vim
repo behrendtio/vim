@@ -209,3 +209,5 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " Search in folder the contains .git and go upwards from current file to find it
 let g:ctrlp_working_path_mode = 'r'
 
+" Disable space binding for auto-pairs plugin
+let g:AutoPairsMapSpace = 0
