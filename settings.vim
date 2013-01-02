@@ -71,7 +71,7 @@ set hlsearch
 set incsearch
 
 " Folding depending on indent
-set foldmethod=syntax
+set foldmethod=indent
 
 " Open all folds when opening a new file
 set nofoldenable
