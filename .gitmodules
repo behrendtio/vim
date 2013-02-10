@@ -55,3 +55,6 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule "bundle/slim"]
+	path = bundle/slim
+	url = https://github.com/slim-template/vim-slim.git
