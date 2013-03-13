@@ -4,7 +4,7 @@ cmap w!! w !sudo tee % >/dev/null
 " Exit insert mode with jj
 map! jj <Esc>
 
-" Save with CTRl-S
+" Save with CTRL-S both in insert and command mode
 map <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 
