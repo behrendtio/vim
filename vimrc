@@ -9,9 +9,9 @@ if !empty($MY_RUBY_HOME)
 endif
 
 " Include all necessary files
+source ~/.vim/functions.vim
 source ~/.vim/settings.vim
 source ~/.vim/abbr.vim
 source ~/.vim/keybindings.vim
-source ~/.vim/functions.vim
 
 call CheckForUpgrade()

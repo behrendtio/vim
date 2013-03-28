@@ -92,3 +92,14 @@ endfunction
 function! SwitchBackground()
     let &background = (&background == "dark"? "light" : "dark")
 endfunction
+
+" Returns branch in square brackets or empty string based on fugitive#head output
+function! GitBranch()
+  let branch = fugitive#head(7)
+
+  if branch == ''
+    return ''
+  endif
+
+  return '[' . branch . ']'
+endfunction
