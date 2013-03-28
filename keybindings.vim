@@ -75,3 +75,10 @@ map <D-2> 2gt
 map <D-3> 3gt
 map <D-4> 4gt
 map <D-5> 5gt
+
+" Map backtick to single quote and vice versa
+" That way single quote act's like backtick for marks,
+" hence it jumps to the exact position, not just the beginning
+" of the line. To get single quote behaviour, backtick can be used
+nnoremap ' `
+nnoremap ` '

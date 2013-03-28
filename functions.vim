@@ -17,8 +17,8 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 " Format whole file according to the filetype and vims syntax settings
 function! FormatFile()
     execute "normal! mf"
-    execute "normal! gg"    
-    execute "normal! =G"    
+    execute "normal! gg"
+    execute "normal! =G"
     execute "normal! 'f"
 endfunction
 
