@@ -130,6 +130,9 @@ set background=dark
 
 " If GVIM was opened
 if has("gui_running")
+    " Start in fullscreen mode
+    set lines=99999
+    set columns=99999
 
     " Font and fontsize
     " Hint: Use 'set guifont=*' to bring up systems font chooser
@@ -176,12 +179,15 @@ set listchars=tab:▸\ ,trail:\·
 set list
 
 " Detect .phtml and .tpl files as PHP
-autocmd BufNewFile,BufRead *.phtml set ft=php
-autocmd BufNewFile,BufRead *.tpl set ft=php
+autocmd BufNewFile,BufRead *.phtml setlocal ft=php
+autocmd BufNewFile,BufRead *.tpl setlocal ft=php
 
 " 4 space indenting for some specific file types
-autocmd BufNewFile,BufRead *.php set ts=4 sts=4 sw=4 expandtab
-autocmd BufNewFile,BufRead *.phtml set ts=4 sts=4 sw=4 expandtab
+autocmd BufNewFile,BufRead *.php setlocal ts=4 sts=4 sw=4 expandtab
+autocmd BufNewFile,BufRead *.phtml setlocal ts=4 sts=4 sw=4 expandtab
+
+" Enabled spell checking for markdown and text files
+autocmd BufNewFile,BufRead *.md,*.txt setlocal spell
 
 
 "------------------------------------------------------------------------------
