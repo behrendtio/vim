@@ -187,7 +187,7 @@ autocmd BufNewFile,BufRead *.php setlocal ts=4 sts=4 sw=4 expandtab
 autocmd BufNewFile,BufRead *.phtml setlocal ts=4 sts=4 sw=4 expandtab
 
 " Enabled spell checking for markdown and text files
-autocmd BufNewFile,BufRead *.md,*.txt setlocal spell
+autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell
 
 
 "------------------------------------------------------------------------------
