@@ -86,9 +86,6 @@ set ts=2 sts=2 sw=2 expandtab
 " Make the backspace key act like it does in any editor (remove characters, indentation and end of lines)
 set backspace=indent,eol,start
 
-" Textwidth to 120 characters (based on this setting, the color column will appear)
-set textwidth=120
-
 " Always substitute global
 set gdefault
 
@@ -188,6 +185,10 @@ autocmd BufNewFile,BufRead *.phtml setlocal ts=4 sts=4 sw=4 expandtab
 
 " Enabled spell checking for markdown and text files
 autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell
+
+" Textwidth to 80 characters for markdown and text files
+autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal textwidth=80
+
 
 
 "------------------------------------------------------------------------------
