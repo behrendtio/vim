@@ -222,3 +222,6 @@ let g:ctrlp_working_path_mode = 'r'
 
 " Disable space binding for auto-pairs plugin
 let g:AutoPairsMapSpace = 0
+
+" Rspec.vim command overwrite
+let g:rspec_command = '!zeus test %'

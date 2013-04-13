@@ -64,3 +64,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/rspec"]
+	path = bundle/rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
