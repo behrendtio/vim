@@ -30,7 +30,7 @@ endfunction
 " Run current file via rspec or if possible via zeus
 function! RunCurrentSpec()
   if InSpecFile()
-    let l:command = '!clear && echo {spec} % && echo "" && {spec} %'
+    let l:command = '!echo {spec} % && echo "" && {spec} %'
 
     " If .zeus.sock is present (in current working directory)
     if !empty(glob('.zeus.sock'))
