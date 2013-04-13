@@ -39,7 +39,6 @@ function! RunCurrentSpec()
       let l:spec = 'rspec'
     endif
 
-    echo l:spec
     write
     execute substitute(l:command, '{spec}', l:spec, 'g')
   endif
