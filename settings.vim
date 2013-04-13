@@ -154,6 +154,10 @@ if has("gui_running")
     " Disable right scroll bar (normal and vsplit one)
     set guioptions-=r
     set guioptions-=R
+
+    " Copy handling
+    set guioptions+=a
+    set guioptions+=A
 endif
 
 " Special solarized setting to get awesome diffs
