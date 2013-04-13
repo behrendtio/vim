@@ -22,6 +22,29 @@ function! FormatFile()
     execute "normal! 'f"
 endfunction
 
+" Returns true if current file is a spec file
+function! InSpecFile()
+  return match(expand("%"), "_spec.rb$") != -1 || match(expand("%"), ".feature$") != -1
+endfunction
+
+" Run current file via rspec or if possible via zeus
+function! RunCurrentSpec()
+  if InSpecFile()
+    let l:command = '!clear && echo {spec} % && echo "" && {spec} %'
+
+    " If .zeus.sock is present (in current working directory)
+    if !empty(glob('.zeus.sock'))
+      let l:spec = 'zeus test'
+    else
+      let l:spec = 'rspec'
+    endif
+
+    echo l:spec
+    write
+    execute substitute(l:command, '{spec}', l:spec, 'g')
+  endif
+endfunction
+
 " Run XML linter for syntax checking
 function! RunXmlLint()
     silent execute ":w"

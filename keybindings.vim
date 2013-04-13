@@ -20,12 +20,10 @@ map <Leader>n :NERDTreeToggle<CR>
 " Toggle code comment with NERDCommenter
 vmap <Leader>c :call NERDComment("nx", "Toggle")<CR>
 
-" Run specs for current file and last spec
-nmap <Leader>t :call RunCurrentSpecFile()<CR>
-nmap <Leader>l :call RunLastSpec()<CR>
-
+" Run specs for current file
+nmap <Leader>t :call RunCurrentSpec()<CR>
 " Since tests are soo awesome, use leader+leader to run tests as well
-nmap <Leader>, :call RunCurrentSpecFile()<CR>
+nmap <Leader>, :call RunCurrentSpec()<CR>
 
 " Switch to the alternate buffer with ,SPACE
 nnoremap <leader><space> :<Esc>:b#<CR>

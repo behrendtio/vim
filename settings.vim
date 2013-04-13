@@ -227,4 +227,4 @@ let g:ctrlp_working_path_mode = 'r'
 let g:AutoPairsMapSpace = 0
 
 " Rspec.vim command overwrite
-let g:rspec_command = '!zeus test %'
+let g:rspec_command = '!clear && echo zeus test % && echo "" && zeus test %'
