@@ -27,8 +27,13 @@ function! InSpecFile()
   return match(expand("%"), "_spec.rb$") != -1 || match(expand("%"), ".feature$") != -1
 endfunction
 
+" Returns true if current file is a javascript file
+function! InJSFile()
+  return match(expand("%"), ".js$") != -1
+endfunction
+
 " Run current file via rspec or if possible via zeus
-function! RunCurrentSpec()
+function! RunCurrentTest()
   if InSpecFile()
     let l:command = '!echo {spec} % && echo "" && {spec} %'
 
@@ -41,6 +46,9 @@ function! RunCurrentSpec()
 
     write
     execute substitute(l:command, '{spec}', l:spec, 'g')
+  elseif InJSFile()
+    write
+    execute '!make test'
   endif
 endfunction
 
