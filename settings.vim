@@ -39,7 +39,8 @@ set spelllang=de,en
 " Mark line breaks with three dots
 set showbreak=...
 
-" Open files on the right side of the current file when using :vs
+" Natural splitting
+set splitbelow
 set splitright
 
 " Improve omni complete menu behaviour
@@ -52,7 +53,7 @@ set cpoptions+=$
 set laststatus=2
 
 " My preferred status line layout
-set stl=%t\ %m\ %r\ \ %y\ \ %{GitBranch()}\ \ Zeile:\ %l/%L[%p%%]\ \ Spalte:\ %c\ \ Buffer:\ #%n\ 
+set stl=%t\ %m\ %r\ \ %y\ \ %{GitBranch()}\ \ %l/%L[%p%%]\ \ Col:\ %c\ \ Buf:\ #%n\ 
 
 " Set scroll off to 8 lines
 set scrolloff=8
@@ -116,11 +117,8 @@ let php_parent_error_open=1
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
-" Set color scheme
-colors solarized
-
 " Set line spacing
-set linespace=0
+set linespace=3
 
 " Black background theme
 set background=dark
@@ -192,6 +190,12 @@ autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell
 
 " Textwidth to 80 characters for markdown and text files
 autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal textwidth=80
+
+" Textwidth to 72 characters and spell check for git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Set color scheme
+colors solarized
 
 
 
