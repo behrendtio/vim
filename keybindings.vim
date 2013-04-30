@@ -81,6 +81,12 @@ map <D-3> 3gt
 map <D-4> 4gt
 map <D-5> 5gt
 
+" Use CTRL + direction to move from one split to another
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Map backtick to single quote and vice versa
 " That way single quote act's like backtick for marks,
 " hence it jumps to the exact position, not just the beginning
