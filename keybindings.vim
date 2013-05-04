@@ -26,13 +26,16 @@ nmap <Leader>t :call RunCurrentTest()<CR>
 nmap <Leader>, :call RunCurrentTest()<CR>
 
 " Switch to the alternate buffer with ,SPACE
-nnoremap <leader><space> :<Esc>:b#<CR>
+nnoremap <Leader><space> :<Esc>:b#<CR>
 
 " Open vimrc file with ,v
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " Search tag with ,s
 nmap <Leader>s <Esc>:tag<space>
+
+" Open current file via `open` command (Mac only)
+nmap <Leader>o :!open %<CR>
 
 " Jump to tag with ,j
 nmap <Leader>j <Esc><C-]>
