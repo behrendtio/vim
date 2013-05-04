@@ -117,27 +117,22 @@ let php_parent_error_open=1
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
-" Set line spacing
-set linespace=3
+" Set color scheme
+colors solarized
 
-" Black background theme
-set background=dark
-
-" If GVIM was opened
+" If using GVIM/MacVim
 if has("gui_running")
-    " Start in fullscreen mode
+    " Set line spacing
+    set linespace=3
+
+    " Background color
+    set background=light
+
+    " Use the whole screen
     set lines=99999
     set columns=99999
 
-    " Font and fontsize
-    " Hint: Use 'set guifont=*' to bring up systems font chooser
-    "
-    " If mac, go for Menlo, otherwise use Monospace
-    if has('mac') || has('macunix')
-        set guifont=Menlo\ Regular:h12
-    else
-        set guifont=Monospace\ 12
-    endif
+    set guifont=Ubuntu\ Mono:h14,Menlo\ Regular:h12,Monospace:h12
 
     " Disable menu bar
     set guioptions-=m
@@ -194,8 +189,8 @@ autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal textwidth=80
 " Textwidth to 72 characters and spell check for git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
-" Set color scheme
-colors solarized
+" Use go syntax for .go files
+au BufRead,BufNewFile *.go set filetype=go
 
 
 
@@ -226,9 +221,3 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Search in folder the contains .git and go upwards from current file to find it
 let g:ctrlp_working_path_mode = 'r'
-
-" Disable space binding for auto-pairs plugin
-let g:AutoPairsMapSpace = 0
-
-" Rspec.vim command overwrite
-let g:rspec_command = '!clear && echo zeus test % && echo "" && zeus test %'
