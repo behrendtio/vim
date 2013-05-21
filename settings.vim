@@ -29,6 +29,11 @@ set number
 " Spell checking languages
 set spelllang=de,en
 
+" Use interactive shell when running commands through :!
+" This let's the shell load it's configuration, hence
+" aliases and config parameters are available and set, respectively
+set shellcmdflag=-ic
+
 " Enable cursor to jump into 'invalid' space
 "set virtualedit=all
 
