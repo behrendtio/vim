@@ -1,6 +1,10 @@
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
 
+" Move by screen line instead of file line
+nmap j gj
+nmap k gk
+
 " Exit insert mode with jj
 map! jj <Esc>
 

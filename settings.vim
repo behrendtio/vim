@@ -32,7 +32,7 @@ set spelllang=de,en
 " Use interactive shell when running commands through :!
 " This let's the shell load it's configuration, hence
 " aliases and config parameters are available and set, respectively
-set shellcmdflag=-ic
+"set shellcmdflag=-ic
 
 " Enable cursor to jump into 'invalid' space
 "set virtualedit=all
@@ -226,3 +226,6 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Search in folder the contains .git and go upwards from current file to find it
 let g:ctrlp_working_path_mode = 'r'
+
+" Set coffeescript compiler path
+let coffee_compiler = '/usr/local/share/npm/bin/coffee'
