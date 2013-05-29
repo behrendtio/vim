@@ -15,7 +15,7 @@ Some of the installed plugins require ruby to be installed and available in your
 Use the following code to grep the repo and symlink it.
 
 ```bash
-$ git clone --recursive git://github.com/mbehrendt/vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
+$ git clone --recursive https://github.com/behrendtio/vim.git ~/.vim && ln -fs ~/.vim/vimrc ~/.vimrc
 ```
 
 ### Long version
@@ -26,7 +26,7 @@ $ git clone --recursive git://github.com/mbehrendt/vim.git ~/.vim && ln -fs ~/.v
 $ cd ~
 $ mv .vim .vim_backup
 $ mv .vimrc .vimrc_backup
-$ git clone git://github.com/mbehrendt/vim.git .vim
+$ git clone https://github.com/behrendtio/vim.git .vim
 ```
 
 * Initialize git submodules.
