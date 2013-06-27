@@ -133,11 +133,17 @@ if has("gui_running")
     " Background color
     set background=light
 
-    " Use the whole screen
-    set lines=99999
-    set columns=99999
+    " If mac
+    if has("macunix")
+      " Use the whole screen
+      set lines=99999
+      set columns=99999
 
-    set guifont=Ubuntu\ Mono:h14,Menlo\ Regular:h12,Monospace:h12
+      set guifont=Ubuntu\ Mono:h14,Menlo\ Regular:h12,Monospace:h12
+    else
+      " If linux
+      set guifont=Ubuntu\ Mono\ 12,Monospace\ 12
+    endif
 
     " Disable menu bar
     set guioptions-=m
