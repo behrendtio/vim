@@ -10,7 +10,7 @@ map! jj <Esc>
 
 " Save with CTRL-S both in insert and command mode
 map <C-s> :w<CR>
-imap <C-s> <Esc>:w<CR>a
+imap <C-s> <Esc>:w<CR>
 
 " Close buffer with CTRL-C
 map <C-c> :bd<CR>
