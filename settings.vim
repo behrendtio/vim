@@ -20,8 +20,8 @@ let mapleader = ","
 " 100 Marks, 1000 Registers, 100 Commands, 100 Searches, Buffer list
 set viminfo='100,f1,\"1000,:100,/100,%
 
-" Show line numbers
-set number
+" Show line numbers (relative ones)
+set relativenumber
 
 " Enable spell checking
 " set spell
