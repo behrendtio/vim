@@ -1,3 +1,31 @@
+" Switch into distraction free writing (iA Writer like)
+" Requires 'Cousine' font, see: http://www.fontsquirrel.com/fonts/cousine
+function! DistractionFreeWriting()
+  set laststatus=0
+  set noruler
+  set linebreak
+  set norelativenumber
+  set nonumber
+
+  if has("gui_running")
+    colorscheme iawriter
+    set background=light
+    set lines=40 columns=100
+    set linespace=5
+    set guioptions-=r
+
+    if has("gui_macvim")
+      set fuoptions=background:#00f5f6f6
+      set fullscreen
+      set guifont=Cousine:h14
+    elseif has("macunix")
+      set guifont=Cousine:h14
+    else
+      set guifont=Cousine\ h14
+    endif
+  endif
+endfunction
+
 " Acts as :!command but shows the output in a seperate buffer
 function! s:ExecuteInShell(command)
     let command = join(map(split(a:command), 'expand(v:val)'))

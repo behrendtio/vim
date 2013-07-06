@@ -7,6 +7,9 @@
 
 Some of the installed plugins require ruby to be installed and available in your $PATH.
 
+If you want to use the distraction free writing mode (Control-F10), you also need the
+[Cousine](http://www.fontsquirrel.com/fonts/cousine) font.
+
 
 ## Installation
 

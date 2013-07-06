@@ -62,6 +62,9 @@ map <Leader>h3 yypVr~o
 nnoremap <tab> %
 vnoremap <tab> %
 
+" Enable distraction free writing mode (no toggle atm) with CONTROL-F10
+map <C-F10> :call DistractionFreeWriting()<CR>
+
 " Switch between light and dark background with Control-F11
 map <C-F11> :call SwitchBackground()<CR>
 
