@@ -12,7 +12,7 @@
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = https://github.com/mbehrendt/snipmate.vim
+	url = https://github.com/behrendtio/snipmate.vim
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
