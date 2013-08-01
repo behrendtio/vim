@@ -238,5 +238,10 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " Search in folder the contains .git and go upwards from current file to find it
 let g:ctrlp_working_path_mode = 'r'
 
+" Use silver searcher as CtrlP backend if installed
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 " Set coffeescript compiler path
 let coffee_compiler = '/usr/local/share/npm/bin/coffee'
