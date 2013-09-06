@@ -168,6 +168,10 @@ endfunction
 
 " Returns branch in square brackets or empty string based on fugitive#head output
 function! GitBranch()
+  if !exists('*fugitive#head')
+    return ''
+  endif
+
   let branch = fugitive#head(7)
 
   if branch == ''
