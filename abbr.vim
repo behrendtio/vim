@@ -1,6 +1,6 @@
 " Common
 iab mbmail info@mario-behrendt.de
-iab ymail mario@yanted.com
+iab ymail m.behrendt@yanted.com
 
 " German
 iab solte sollte
@@ -24,3 +24,5 @@ iab edn end
 iab dfe def
 iab modle model
 iab exporst exports
+iab expet expect
+iab epect expect
