@@ -69,16 +69,25 @@ endfunction
 function! RunCurrentTest()
   write
   if InSpecFile()
-    let l:command = '!echo {spec} % && echo "" && {spec} %'
+    let l:command = '!echo {runner} % && echo "" && {runner} %'
 
     " If .zeus.sock is present (in current working directory)
     if !empty(glob('.zeus.sock'))
-      let l:spec = 'zeus test'
+      let l:runner = 'zeus test'
     else
-      let l:spec = 'rspec'
+      let l:runner = 'rspec'
     endif
 
-    execute substitute(l:command, '{spec}', l:spec, 'g')
+
+    " If running in tmux
+    if '$TMUX' != expand('$TMUX')
+      let command = substitute('call Send_to_Tmux("{runner} {spec}\n")', '{runner}', l:runner, 'g')
+      let command = substitute(l:command, '{spec}', expand('%'), 'g')
+    else
+      let command = substitute(l:command, '{runner}', l:runner, 'g')
+    endif
+
+    execute command
   elseif InRubyTestFile()
     execute '!ruby -Ilib -Itest %'
   elseif InJSFile()
