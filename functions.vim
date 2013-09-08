@@ -69,7 +69,7 @@ endfunction
 function! RunCurrentTest()
   write
   if InSpecFile()
-    let l:command = '!echo {runner} % && echo "" && {runner} %'
+    let l:command = '!{runner} %'
 
     " If .zeus.sock is present (in current working directory)
     if !empty(glob('.zeus.sock'))
