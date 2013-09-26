@@ -46,3 +46,13 @@ $ ln -fs ~/.vim/vimrc ~/.vimrc
 ```
 
 * Restart (G)Vim.
+
+## Screenshots
+
+### Normal mode
+
+![](https://i.cloudup.com/iBVvKEJFy6.png)
+
+### Distraction free mode
+
+![](https://i.cloudup.com/MJmyXKlF1E.png)
