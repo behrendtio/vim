@@ -21,7 +21,7 @@ let mapleader = ","
 set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers (relative ones)
-set relativenumber
+set number
 
 " Enable spell checking
 " set spell
@@ -190,17 +190,13 @@ endif
 
 " Detect .phtml and .tpl files as PHP
 autocmd BufNewFile,BufRead *.phtml setlocal ft=php
-autocmd BufNewFile,BufRead *.tpl setlocal ft=php
 
 " 4 space indenting for some specific file types
 autocmd BufNewFile,BufRead *.php setlocal ts=4 sts=4 sw=4 expandtab
 autocmd BufNewFile,BufRead *.phtml setlocal ts=4 sts=4 sw=4 expandtab
 
-" Enabled spell checking for markdown and text files
-autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell
-
-" Textwidth to 80 characters for markdown and text files
-autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal textwidth=80
+" Enabled spell checking and set textwidth to 80 characters for markdown and text files
+autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell textwidth=80
 
 " Textwidth to 72 characters and spell check for git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
