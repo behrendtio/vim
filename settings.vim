@@ -21,7 +21,7 @@ let mapleader = ","
 set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers (relative ones)
-set number
+set relativenumber
 
 " Enable spell checking
 " set spell
