@@ -71,10 +71,6 @@ map <C-F11> :call SwitchBackground()<CR>
 " Use space to center screen on current line
 nmap <Space> zz
 
-" Always center search results on screen
-nmap n nzz
-nmap N Nzz
-
 " Shortcuts for tabular plugin
 vmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a: :Tabularize /=\zs<CR>
