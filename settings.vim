@@ -183,11 +183,6 @@ set listchars=tab:▸\ ,trail:\·
 " Show stuff like end of line, tabs and so on
 set list
 
-" Use unnamed register on command line
-if !has("gui_running")
-  set clipboard=unnamed
-endif
-
 " Detect .phtml and .tpl files as PHP
 autocmd BufNewFile,BufRead *.phtml setlocal ft=php
 
