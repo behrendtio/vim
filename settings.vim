@@ -223,6 +223,9 @@ let NERDTreeChDirMode=2
 " Start NERDTree in minimal UI mode (No help lines)
 let NERDTreeMinimalUI=1
 
+" Hide .pyc files in NERDTree
+let NERDTreeIgnore = ['\.pyc$']
+
 " Open CtrlP window in mixed mode by default
 let g:ctrlp_cmd = 'CtrlPMixed'
 
