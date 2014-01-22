@@ -44,6 +44,9 @@ nmap <Leader>o :!open %<CR>
 " Jump to tag with ,j
 nmap <Leader>j <Esc><C-]>
 
+" Jump to tag in split window with ,js
+nmap <Leader>js <Esc>:vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 " Format whole file with ,f
 nmap <Leader>f <Esc>:call FormatFile()<CR>
 
