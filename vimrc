@@ -1,7 +1,7 @@
 " Initiate pathogen plugin
 filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+set nocp
+execute pathogen#infect()
 
 " Fix for long loadtime when opening ruby files (see http://goo.gl/iGWs9)
 if !empty($MY_RUBY_HOME)
