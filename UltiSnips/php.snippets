@@ -1,0 +1,38 @@
+snippet method
+${1:public} function ${2:name}($3)
+{
+    $4
+}
+endsnippet
+
+snippet debug
+die(var_dump(__FILE__ . ' on line ' . __LINE__ . ':', ${1:var}));$2
+endsnippet
+
+snippet php
+<?php $1; ?>
+endsnippet
+
+snippet cls
+<?php
+class ${1:Name} extends ${2:Parent}
+{
+    $3
+}
+endsnippet
+
+snippet mage_helper
+<?php
+class ${1:Name} extends Mage_Core_Helper_Data
+{
+    $2
+}
+endsnippet
+
+snippet mage_controller
+<?php
+class ${1:Name}Controller extends Mage_Core_Controller_Front_Action
+{
+    $2
+}
+endsnippet

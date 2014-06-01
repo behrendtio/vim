@@ -197,7 +197,7 @@ autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell textwidth=80
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Use go syntax for .go files
-au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.go setlocal filetype=go nolist ts=4 sts=4 sw=4 noexpandtab
 
 
 
@@ -239,3 +239,8 @@ endif
 
 " Set coffeescript compiler path
 let coffee_compiler = '/usr/local/share/npm/bin/coffee'
+
+" Use tab for snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

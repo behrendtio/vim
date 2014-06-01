@@ -1,0 +1,37 @@
+snippet tag
+<${1:tag}>
+  $2
+</$1>
+endsnippet
+
+snippet tagi
+<${1:tag}>$2</$1>
+endsnippet
+
+snippet xml
+<?xml version="1.0" encoding="UTF-8"?>
+$1
+endsnippet
+
+snippet mage_config
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <${1:Module_Name}>
+      <version>0.0.1</version>
+    </$1>
+  </modules>
+</config>
+endsnippet
+
+snippet mage_module
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <${1:Module_Name}>
+      <active>true</active>
+      <codePool>local</codePool>
+    </$1>
+  </modules>
+</config>
+endsnippet
