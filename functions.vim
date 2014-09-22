@@ -131,6 +131,8 @@ function! CheckForUpgrade()
 
     let output = "Vim configuration update checker\n--------------------------------\n\n"
 
+    let cwd = getcwd()
+
     execute 'lcd '.$HOME.'/.vim'
 
     let remote = system("git ls-remote origin -h refs/heads/master | awk '{print $1}'")
@@ -148,7 +150,7 @@ function! CheckForUpgrade()
         let output .= "\n==========================================" 
     endif
 
-    execute 'lcd '.$HOME.'/.vim'
+    execute 'lcd '.cwd
 
     execute ':tabnew'
 
