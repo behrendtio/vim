@@ -244,3 +244,6 @@ let coffee_compiler = '/usr/local/share/npm/bin/coffee'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Use C-E and then comma to run emmet
+let g:user_emmet_leader_key='<C-E>'
