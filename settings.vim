@@ -199,6 +199,9 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " Use go syntax for .go files
 au BufRead,BufNewFile *.go setlocal filetype=go nolist ts=4 sts=4 sw=4 noexpandtab
 
+" Use javascript syntax for .es6 files
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
 
 
 "------------------------------------------------------------------------------
