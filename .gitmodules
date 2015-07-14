@@ -51,4 +51,4 @@
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/emmet"]
 	path = bundle/emmet
-	url = http://github.com/mattn/emmet-vim/
+	url = http://github.com/mattn/emmet-vim.git
