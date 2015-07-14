@@ -21,7 +21,7 @@ let mapleader = ","
 set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers (relative ones)
-set relativenumber
+"set relativenumber
 
 " Enable spell checking
 " set spell
@@ -171,7 +171,7 @@ let g:solarized_diffmode="high"
 let g:solarized_visibility="low"
 
 " Highlight current line
-set cursorline
+"set cursorline
 
 " Indent based on previous line
 set autoindent

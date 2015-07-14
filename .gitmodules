@@ -7,9 +7,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/gundo"]
-	path = bundle/gundo
-	url = https://github.com/sjl/gundo.vim.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
@@ -22,15 +19,9 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
-[submodule "bundle/vim-jade"]
-	path = bundle/vim-jade
-	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "bundle/vim-stylus"]
-	path = bundle/vim-stylus
-	url = https://github.com/wavded/vim-stylus.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -49,18 +40,9 @@
 [submodule "bundle/visual-star-search"]
 	path = bundle/visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
-[submodule "bundle/dispatch"]
-	path = bundle/dispatch
-	url = git://github.com/tpope/vim-dispatch.git
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
-[submodule "bundle/tslime"]
-	path = bundle/tslime
-	url = https://github.com/jgdavey/tslime.vim.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
