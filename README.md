@@ -1,6 +1,6 @@
 # Vim Configuration
 
-*ATTENTION: Use at your own risk! Tested with Vim 7.2 and newer.*
+*ATTENTION: Use at your own risk! Tested with Vim 7.4 and newer.*
 
 
 ## Requirements
