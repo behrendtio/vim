@@ -49,6 +49,6 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "/Users/mario/.vim/bundle/vim-elixir"]
-	path = /Users/mario/.vim/bundle/vim-elixir
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
