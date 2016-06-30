@@ -21,7 +21,7 @@ let mapleader = ","
 set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers (relative ones)
-"set relativenumber
+set relativenumber
 
 " Enable spell checking
 " set spell
@@ -139,7 +139,7 @@ if has("gui_running")
       set lines=99999
       set columns=99999
 
-      set guifont=Ubuntu\ Mono:h14,Menlo\ Regular:h12,Monospace:h12
+      set guifont=Menlo\ Regular:h14,Monospace:h12
     else
       " If linux
       set guifont=Ubuntu\ Mono\ 12,Monospace\ 12
@@ -171,7 +171,7 @@ let g:solarized_diffmode="high"
 let g:solarized_visibility="low"
 
 " Highlight current line
-"set cursorline
+set cursorline
 
 " Indent based on previous line
 set autoindent
@@ -240,9 +240,6 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
-" Set coffeescript compiler path
-let coffee_compiler = '/usr/local/share/npm/bin/coffee'
-
 " Use tab for snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -250,3 +247,5 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Use C-E and then comma to run emmet
 let g:user_emmet_leader_key='<C-E>'
+
+"colors onedark

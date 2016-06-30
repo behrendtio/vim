@@ -15,9 +15,6 @@ imap <C-s> <Esc>:w<CR>
 " Close buffer with CTRL-C
 map <C-c> :bd<CR>
 
-" Gundo side bar with ,g
-map <Leader>g :GundoToggle<CR>
-
 " Toggle NERDtree with ,n
 map <Leader>n :NERDTreeToggle<CR>
 
@@ -50,23 +47,12 @@ nmap <Leader>js <Esc>:vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " Format whole file with ,f
 nmap <Leader>f <Esc>:call FormatFile()<CR>
 
-" Run XML file through linter with ,xl
-nmap <Leader>xl :call RunXmlLint()<CR>
-
 " Re-open file with windows line endings
 nmap <Leader>dos :e ++ff=dos<CR>
-
-" Insert Rst Headline marks under the current line
-map <Leader>h1 yypVr=o
-map <Leader>h2 yypVr-o
-map <Leader>h3 yypVr~o
 
 " Use tab to toggle between matching brackets
 nnoremap <tab> %
 vnoremap <tab> %
-
-" Enable distraction free writing mode (no toggle atm) with CONTROL-F10
-map <C-F10> :call DistractionFreeWriting()<CR>
 
 " Switch between light and dark background with Control-F11
 map <C-F11> :call SwitchBackground()<CR>
@@ -80,7 +66,7 @@ vmap <Leader>a: :Tabularize /=\zs<CR>
 
 " Disable arrow keys for navigation
 " Use left and right arrow key for previous and next buffer
-" USe up and down to bubbling lines
+" Use up and down for bubbling lines
 nmap <up> [e
 nmap <down> ]e
 nnoremap <left> <Esc>:bp<CR>

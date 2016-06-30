@@ -1,47 +1,3 @@
-" Switch into distraction free writing (iA Writer like)
-" Requires 'Cousine' font, see: http://www.fontsquirrel.com/fonts/cousine
-function! DistractionFreeWriting()
-  set laststatus=0
-  set noruler
-  set linebreak
-  set norelativenumber
-  set nonumber
-
-  if has("gui_running")
-    colorscheme iawriter
-    set background=light
-    set lines=40 columns=100
-    set linespace=5
-    set guioptions-=r
-
-    if has("gui_macvim")
-      set fuoptions=background:#00f5f6f6
-      set fullscreen
-      set guifont=Cousine:h14
-    elseif has("macunix")
-      set guifont=Cousine:h14
-    else
-      set guifont=Cousine\ h14
-    endif
-  endif
-endfunction
-
-" Acts as :!command but shows the output in a seperate buffer
-function! s:ExecuteInShell(command)
-    let command = join(map(split(a:command), 'expand(v:val)'))
-    let winnr = bufwinnr('^' . command . '$')
-    silent! execute  winnr < 0 ? 'botright new ' . fnameescape(command) : winnr . 'wincmd w'
-    setlocal buftype=nowrite bufhidden=wipe nobuflisted noswapfile nowrap number
-    echo 'Execute ' . command . '...'
-    silent! execute 'silent %!'. command
-    silent! execute 'resize ' . line('$')
-    silent! redraw
-    silent! execute 'au BufUnload <buffer> execute bufwinnr(' . bufnr('#') . ') . ''wincmd w'''
-    silent! execute 'nnoremap <silent> <buffer> <LocalLeader>r :call <SID>ExecuteInShell(''' . command . ''')<CR>'
-    echo 'Shell command ' . command . ' executed.'
-endfunction
-command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
-
 " Format whole file according to the filetype and vims syntax settings
 function! FormatFile()
     execute "normal! mf"
@@ -68,39 +24,7 @@ endfunction
 " Run current file via rspec or if possible via zeus
 function! RunCurrentTest()
   write
-  if InSpecFile()
-    let l:command = '!{runner} %'
-
-    " If .zeus.sock is present (in current working directory)
-    if !empty(glob('.zeus.sock'))
-      let l:runner = 'zeus test'
-    else
-      let l:runner = 'rspec'
-    endif
-
-
-    " If running in tmux
-    if '$TMUX' != expand('$TMUX')
-      let command = substitute('call Send_to_Tmux("{runner} {spec}\n")', '{runner}', l:runner, 'g')
-      let command = substitute(l:command, '{spec}', expand('%'), 'g')
-    else
-      let command = substitute(l:command, '{runner}', l:runner, 'g')
-    endif
-
-    execute command
-  elseif InRubyTestFile()
-    execute '!ruby -Ilib -Itest %'
-  elseif InJSFile()
-    execute '!make test'
-  endif
-endfunction
-
-" Run XML linter for syntax checking
-function! RunXmlLint()
-    silent execute ":w"
-
-    let cmd = '!xmllint --noout %'
-    execute cmd
+  execute '!mix test'
 endfunction
 
 " Check for vim config update
