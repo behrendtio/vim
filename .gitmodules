@@ -52,12 +52,12 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "/Users/mario/.vim/bundle/vim-colors-off"]
-	path = /Users/mario/.vim/bundle/vim-colors-off
+[submodule "bundle/vim-colors-off"]
+	path = bundle/vim-colors-off
 	url = https://github.com/pbrisbin/vim-colors-off.git
-[submodule "/Users/mario/.vim/bundle/vim-javascript"]
-	path = /Users/mario/.vim/bundle/vim-javascript
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "/Users/mario/.vim/bundle/vim-jsx"]
-	path = /Users/mario/.vim/bundle/vim-jsx
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
