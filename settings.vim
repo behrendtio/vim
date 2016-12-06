@@ -7,6 +7,9 @@ set nocompatible
 " Automatically read files when they were changed on the filesystem
 set autoread
 
+" Use new regex engine
+set re=1
+
 " Mute system beep and supress visual bell
 autocmd GUIEnter * set vb t_vb=
 
@@ -21,7 +24,7 @@ let mapleader = ","
 set viminfo='100,f1,\"1000,:100,/100,%
 
 " Show line numbers (relative ones)
-set relativenumber
+"set relativenumber
 
 " Enable spell checking
 " set spell
@@ -120,8 +123,15 @@ let g:netrw_liststyle=3
 " Set color scheme
 colors solarized
 
+" Background color
+set background=light
+
 " If using GVIM/MacVim
 if has("gui_running")
+    " Different colors in GUI version
+    colors onedark
+    set background=dark
+
     " Use interactive shell when running commands through :!
     " This let's the shell load it's configuration, hence
     " aliases and config parameters are available and set, respectively
@@ -130,16 +140,13 @@ if has("gui_running")
     " Set line spacing
     set linespace=3
 
-    " Background color
-    set background=light
-
     " If mac
     if has("macunix")
       " Use the whole screen
       set lines=99999
       set columns=99999
 
-      set guifont=Menlo\ Regular:h14,Monospace:h12
+      set guifont=Menlo\ Regular:h12,Monospace:h12
     else
       " If linux
       set guifont=Ubuntu\ Mono\ 12,Monospace\ 12
@@ -215,7 +222,7 @@ let NERDTreeWinSize=50
 let NERDTreeQuitOnOpen=1
 
 " Show NERDTree bookmarks
-let NERDTreeShowBookmarks=1
+let NERDTreeShowBookmarks=0
 
 " Display arrows instead of ascii art in NERDTree
 let NERDTreeDirArrows=1
@@ -248,4 +255,5 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Use C-E and then comma to run emmet
 let g:user_emmet_leader_key='<C-E>'
 
-"colors onedark
+" Allow JSX in normal JS files as well
+let g:jsx_ext_required = 0
