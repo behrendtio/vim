@@ -61,3 +61,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "bundle/nova-vim"]
+	path = bundle/nova-vim
+	url = https://github.com/trevordmiller/nova-vim.git
