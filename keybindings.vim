@@ -21,10 +21,10 @@ map <Leader>n :NERDTreeToggle<CR>
 " Toggle code comment with NERDCommenter
 vmap <Leader>c :call NERDComment("nx", "Toggle")<CR>
 
-" Run tests for current file
-nmap <Leader>t :call RunCurrentTest()<CR>
-" Since tests are soo awesome, use leader+leader to run tests as well
-nmap <Leader>, :call RunCurrentTest()<CR>
+" Run all specs for current file
+nmap <Leader>t :w<cr>:call RunCurrentSpecFile()<CR>
+" Run only nearest spec
+nmap <Leader>, :w<cr>:call RunNearestSpec()<CR>
 
 " Switch to the alternate buffer with ,SPACE
 nnoremap <Leader><space> :<Esc>:b#<CR>
@@ -57,8 +57,8 @@ vnoremap <tab> %
 " Switch between light and dark background with Control-F11
 map <C-F11> :call SwitchBackground()<CR>
 
-" Use space to center screen on current line
-nmap <Space> zz
+" Use space to put current line on top
+nmap <Space> zt
 
 " Shortcuts for tabular plugin
 vmap <Leader>a= :Tabularize /=<CR>
@@ -76,7 +76,7 @@ inoremap <down> <nop>
 inoremap <left> <Esc>:bp<CR>
 inoremap <right> <Esc>:bn<CR>
 
-" Use first five tabs like in Chrome or Sublime (Command-$Number)
+" Use first five tabs like in Chrome (Command-$Number)
 map <D-1> 1gt
 map <D-2> 2gt
 map <D-3> 3gt

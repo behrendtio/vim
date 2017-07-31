@@ -110,21 +110,17 @@ filetype indent on
 " Attention: Does not work in terminal vim ;-)
 au FocusLost * :wa
 
-" Enable syntax highlighting of SQL and HTML within PHP files and set PHP folding and error handling
-let php_sql_query=1
-let php_htmlInStrings=1
-"let php_folding=1 " Slow on macs for some reason, maybe: http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
-let php_parent_error_close=1
-let php_parent_error_open=1
-
 " Open netrw with tree style
 let g:netrw_liststyle=3
 
-" Set color scheme
-colors solarized
+" Well, redraw lazily
+set lazyredraw
 
 " Background color
 set background=light
+
+" Colors
+colors solarized
 
 " If using GVIM/MacVim
 if has("gui_running")
@@ -190,13 +186,6 @@ set listchars=tab:▸\ ,trail:\·
 " Show stuff like end of line, tabs and so on
 set list
 
-" Detect .phtml and .tpl files as PHP
-autocmd BufNewFile,BufRead *.phtml setlocal ft=php
-
-" 4 space indenting for some specific file types
-autocmd BufNewFile,BufRead *.php setlocal ts=4 sts=4 sw=4 expandtab
-autocmd BufNewFile,BufRead *.phtml setlocal ts=4 sts=4 sw=4 expandtab
-
 " Enabled spell checking and set textwidth to 80 characters for markdown and text files
 autocmd BufNewFile,BufRead *.md,*.markdown,*.txt setlocal spell textwidth=80
 
@@ -205,11 +194,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Use go syntax for .go files
 au BufRead,BufNewFile *.go setlocal filetype=go nolist ts=4 sts=4 sw=4 noexpandtab
-
-" Use javascript syntax for .es6 files
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-
-
 
 "------------------------------------------------------------------------------
 " Plugin settings
@@ -257,3 +241,6 @@ let g:user_emmet_leader_key='<C-E>'
 
 " Allow JSX in normal JS files as well
 let g:jsx_ext_required = 0
+
+" Always clear output and use bin/rspec
+let g:rspec_command = "!clear && bin/rspec {spec}"

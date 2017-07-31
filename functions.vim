@@ -6,26 +6,6 @@ function! FormatFile()
   execute "normal! 'f"
 endfunction
 
-" Returns true if current file is a spec file
-function! InSpecFile()
-  return match(expand("%"), "_spec.rb$") != -1
-endfunction
-
-" Returns true if current file is a ruby test file
-function! InRubyTestFile()
-  return match(expand("%"), "_test.rb$") != -1
-endfunction
-
-" Run current file spec
-function! RunCurrentTest()
-  write
-  if InSpecFile()
-    execute '!clear; bin/rspec --no-color %'
-  elseif InRubyTestFile()
-    execute '!clear; ruby -Ilib -Itest %'
-  endif
-endfunction
-
 " Check for vim config update
 function! CheckForUpgrade()
   let g:VimConfigUpdateCheck = 1
