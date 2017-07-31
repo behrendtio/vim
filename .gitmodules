@@ -64,3 +64,6 @@
 [submodule "bundle/nova-vim"]
 	path = bundle/nova-vim
 	url = https://github.com/trevordmiller/nova-vim.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
