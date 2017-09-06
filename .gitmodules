@@ -70,3 +70,15 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/heredoc-syntax"]
+	path = bundle/heredoc-syntax
+	url = https://github.com/joker1007/vim-ruby-heredoc-syntax.git
+[submodule "bundle/vim-graphql"]
+	path = bundle/vim-graphql
+	url = https://github.com/jparise/vim-graphql.git
