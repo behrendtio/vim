@@ -30,7 +30,7 @@ set viminfo='100,f1,\"1000,:100,/100,%
 " set spell
 
 " Spell checking languages
-set spelllang=de,en
+set spelllang=en
 
 " Enable cursor to jump into 'invalid' space
 "set virtualedit=all
@@ -244,3 +244,10 @@ let g:jsx_ext_required = 0
 
 " Always clear output and use bin/rspec
 let g:rspec_command = "!clear && bin/rspec {spec}"
+
+" Heredoc syntax highlighting for GraphQL queries
+let g:ruby_heredoc_syntax_filetypes = {
+      \ "graphql" : {
+      \   "start" : "GRAPHQL",
+      \},
+      \}
